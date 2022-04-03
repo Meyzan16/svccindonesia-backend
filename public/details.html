@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Your Best Marketplace</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="public/style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light navbar-store
+        fixed-top
+        navbar-fixed-top
+      "
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <!-- <a href="/index.html" class="navbar-brand">
+          <img src="public/images/Vector.png" alt="logo" />
+        </a> -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kategori.html" class="nav-link">Kategori</a>
+            </li>
+        
+          </ul>
+
+            <!-- dekstop menu -->
+            <ul class="navbar-nav d-none d-lg-flex">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                >
+                  <img
+                    src="public/images/user_pc.png"
+                    alt=""
+                    class="rounded-circle mr-2 profile-picture"
+                  />
+                  Hi, adzan
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/dashboard.html" class="dropdown-item"> Dashboard</a>
+                  <a href="/dashboard-account.html" class="dropdown-item"
+                    >Settings
+                    </a>
+                  <div class="dropdown-divider"></div>
+                    <a href="/" class="dropdown-item">Logout</a>      
+                </div>
+              </li>
+
+              <li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link d-inline-block mt-2">
+                    <img src="public/images/card-empty.svg" alt="">
+                  </a>
+                </li>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav d-block d-lg-none">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Hi,Angga
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-inline-block">
+                  Card
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page content -->
+    <div class="page-content page-details">
+      <!-- breadcrumbs -->
+      <section class="store-breadcrumbs" data-aos="fade-down" data-aos-delay="100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/index.html"> Home </a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    Product Details
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- detail gambar -->
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <!-- sebuah elemen membutuhkan key -->
+                <img :src="photos[activePhoto].url" :key="photos[activePhoto].id"   
+                class="w-100 main-image" alt="">
+              </transition>
+
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <!-- fungsi v-for untuk looping dari data yang ada di vue js -->
+                <div class="col-3 col-lg-12 mt-2 mt-lg-0" v-for="(photo, index) in photos"
+                 :key="index.id" data-aos="zoom-in" data-aos-delay="100"> 
+                <a href="#" @click="changeActive(index)">
+                  <img v-bind:src="photo.url" class="w-100 thumbnail-image" :class="{active:index == activePhoto}" alt="">
+                </a>
+                </div>
+              </div>
+            </div> 
+
+          </div>
+        </div>
+      </section>
+
+     
+      <div class="store-details-container mt-3" data-aos="fade-up">
+         <!-- Heading -->
+        <section class="store-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1> Raja empat </h1>
+                <div class="owner">By Robbin joseph</div>
+                <div class="price">14,890</div>
+              </div>
+              <div class="col-lg-2" data-aos="zoom-in">
+                <a href="/card.html" class="btn btn-success px-4 text-white btn-block mb-3">
+                  Add to Card
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- deskripsi -->
+        <section class="store-description">
+           <div class="container">
+             <div class="row">
+               <div class="col-12 col-lg-8">
+                 <p>
+                  Kabupaten Raja Ampat adalah salah satu kabupaten di provinsi Papua Barat, Indonesia. Ibukota kabupaten ini terletak di Waisai. Kabupaten ini memiliki 610 pulau, termasuk kepulauan Raja Ampat. Empat di antaranya, yakni Pulau Misool, Salawati, Batanta dan Waigeo, merupakan pulau-pulau besar. Konon, suatu hari seorang wanita menemukan tujuh telur, empat diantaranya berubah menjadi pangeran dan tiga sisanya menjadi seorang wanita, hantu dan sebuah batu.
+                  Ke empat pangeran tadi berpisah lalu masing-masing berkuasa di Waigeo, Salawati, Batanta dan Misool
+                 </p>
+                 <p>
+                  Dilihat dari sisi sejarah, Kepulauan Raja Ampat di abad ke-15 merupakan bagian dari kekuasaan Kesultanan Tidore, sebuah kerajaan besar yang berpusat di Kepulauan Maluku. Untuk menjalankan pemerintahannya, Kesultanan Tidore menunjuk 4 orang Raja lokal untuk berkuasa di pulau Waigeo, Batanta, Salawati dan Misool.
+Istilah 4 orang Raja dalam yang memerintah di gugusan kepulauan itulah yang menjadi awal dari nama Raja Ampat.
+
+                 </p>
+               </div>
+             </div>
+           </div>
+        </section>
+
+        <section class="store-review">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8 mt-3 mb-3">
+                <h5>Costomer Review(3 )</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="public/images/review-product/1.png" class="mr-3 rounded-circle" alt="">
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                      I thought it was not good for living room. I really happy
+                      to decided buy this product last week now feels like homey.
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <img src="public/images/review-product/2.png" class="mr-3 rounded-circle" alt="">
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                      I thought it was not good for living room. I really happy
+                      to decided buy this product last week now feels like homey.
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <img src="public/images/review-product/3.png" class="mr-3 rounded-circle" alt="">
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                      I thought it was not good for living room. I really happy
+                      to decided buy this product last week now feels like homey.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">2020 Copyraight@adzanmagrib.e</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="public/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+    <script src="public/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({ 
+        el: "#gallery", //membuat elemen dengan id gallery yang mana di hande oleh vue js
+        mounted() { //
+          AOS.init();
+        },
+        //vueJs berjalan di client server
+        data: {
+          activePhoto: 0, //array ke barapa photo nya aktif, photo simpan ke dalam array
+          photos: [
+            {
+              id:1,
+              url: "public/images/papua/1.jpg"
+            },
+            {
+              id:2,
+              url: "public/images/papua/2.jpg"
+            },
+            {
+              id:3,
+              url: "public/images/papua/3.jpg"
+            },
+            {
+              id:4,
+              url: "public/images/papua/4.jpg"
+            },
+          ],
+        },
+        //methode menyimpan fungsi2 di vue
+        methods:{
+          changeActive(id) {
+            this.activePhoto = id; 
+          },
+        },
+      });
+    </script>
+    <script src="public/script/navbar-scroll.js"></script>
+  </body>
+</html>
