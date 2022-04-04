@@ -16,7 +16,7 @@
         ></div>
         <!--close of /.bg-holder-->
 
-        <div class="container">
+        <div class="container mt-6">
         <div class="row align-items-center">
             <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end">
             <!-- <img
