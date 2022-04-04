@@ -12,7 +12,7 @@
         <!--/.bg-holder-->
         <div
         class="bg-holder"
-        style="background-image: url(/images/comingsoon.png)"
+        style="background-image: url(/images/background.jpg)"
         ></div>
         <!--close of /.bg-holder-->
 
@@ -28,7 +28,7 @@
             <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
             <h4 class="fw-bold text-warning mb-3">Truly Indonesia</h4>
             <h1 class="hero-title">Indonesia 360 Tour</h1>
-            <p class="mb-4 fw-medium text-danger">
+            <p class="mb-4 fw-medium text-kuning">
                 Nikmati pengalaman baru dan seru<br class="d-none d-xl-block" />
                 dalam menjelajahi Indonesia.
                 <br class="d-none d-xl-block" />
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <!-- <section> begin ============================-->
+
     <section id="aboutus">
         <div class="container">
         <div class="row align-items-center">
@@ -218,12 +218,208 @@
         </div>
         <!-- end of .container-->
     </section>
-    <!-- <section> close ============================-->
 
-    
 
-    <!-- <section> begin ============================-->
-    <section class="pt-5 pt-md-9" id="destination">
+    <section id="services">
+            <div class="container">
+            <div class="row align-items-center">
+                <div
+                class="col-lg-6 d-flex justify-content-center align-items-start"
+                >
+                <div
+                    class="card position-relative shadow"
+                    style="max-width: 370px"
+                >
+                    <div
+                    class="position-absolute z-index--1 me-10 me-xxl-0"
+                    style="right: -160px; top: -210px"
+                    >
+                    <img
+                        src="assets/img/steps/bg.png"
+                        style="max-width: 550px"
+                        alt="shape"
+                    />
+                    </div>
+                    <div class="card-body p-3">
+                    <img
+                        class="mb-4 mt-2 rounded-2 w-100"
+                        src="images/papua/2.jpg"
+                        alt="booking"
+                    />
+                    <div>
+                        <h5 class="fw-medium">Trip Raja empat</h5>
+                        <p class="fs--1 mb-3 fw-medium">
+                        14-29 June | by Robbin joseph
+                        </p>
+                        <div class="icon-group mb-4">
+                        <span class="btn icon-item">
+                            <img
+                            src="assets/img/steps/leaf.svg"
+                            alt="" /></span
+                        ><span class="btn icon-item">
+                            <img
+                            src="assets/img/steps/map.svg"
+                            alt="" /></span
+                        ><span class="btn icon-item">
+                            <img src="assets/img/steps/send.svg" alt=""
+                        /></span>
+                        </div>
+                        <div
+                        class="d-flex align-items-center justify-content-between"
+                        >
+                        <div class="d-flex align-items-center mt-n1">
+                            <img
+                            class="me-3"
+                            src="assets/img/steps/building.svg"
+                            width="18"
+                            alt="building"
+                            /><span class="fs--1 fw-medium">24 people going</span>
+                        </div>
+                        <div class="show-onhover position-relative">
+                            <div
+                            class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
+                            style="width: 260px; border-radius: 18px"
+                            >
+                            <div class="card-body py-3">
+                                <div class="d-flex">
+                                <div style="margin-right: 10px">
+                                    <img
+                                    class="rounded-circle"
+                                    src="assets/img/steps/favorite-placeholder.png"
+                                    width="50"
+                                    alt="favorite"
+                                    />
+                                </div>
+                                <div>
+                                    <p class="fs--1 mb-1 fw-medium">Ongoing</p>
+                                    <h5 class="fw-medium mb-3">Trip to rome</h5>
+                                    <h6 class="fs--1 fw-medium mb-2">
+                                    <span>40%</span> completed
+                                    </h6>
+                                    <div class="progress" style="height: 6px">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 40%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    ></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="btn">
+                            <img
+                                src="assets/img/steps/heart.svg"
+                                width="20"
+                                alt="step"
+                            />
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6">
+                <div class="mb-4 text-start">
+                    <h3
+                    class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+                    >
+                    Our Services
+                    </h3>
+                    <h5 class="text-secondary">
+                    Tidak hanya berwisata secara virtual360,<br />
+                    pengunjung dapat merasakan berbagai pengalaman menarik lainnya
+                    dengan berbagai macam layanan yang tersedia.
+                    </h5>
+                </div>
+                <a href="">
+                    <div class="d-flex align-items-start mb-5">
+                    <div
+                        class="bg-primary me-sm-4 me-3 p-3"
+                        style="border-radius: 13px"
+                    >
+                        <img
+                        src="assets/img/steps/selection.svg"
+                        width="22"
+                        alt="steps"
+                        />
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-secondary fw-bold fs-0">
+                        <a href="#">Virtual Tour 360</a>
+                        </h5>
+                        <p>
+                        Dengan teknologi 3D view 360 di mana memungkinkan
+                        <br class="d-none d-sm-block" />
+                        untuk mengelilingi Indonesia tanpa harus berpindah tempat.
+                        </p>
+                    </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="d-flex align-items-start mb-5">
+                    <div
+                        class="bg-danger me-sm-4 me-3 p-3"
+                        style="border-radius: 13px"
+                    >
+                        <img
+                        src="assets/img/steps/water-sport.svg"
+                        width="22"
+                        alt="steps"
+                        />
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-secondary fw-bold fs-0">
+                        <a href="#">Pembelian Produk UMKM</a>
+                        </h5>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aperiam at itaque nobis perspiciatis saepe! Architecto,
+                        blanditiis commodi consectetur consequatur consequuntur
+                        distinctio hic inventore labore omnis, quisquam recusandae
+                        soluta vitae voluptas?
+                        </p>
+                    </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="d-flex align-items-start mb-5">
+                    <div
+                        class="bg-info me-sm-4 me-3 p-3"
+                        style="border-radius: 13px"
+                    >
+                        <img
+                        src="assets/img/steps/taxi.svg"
+                        width="22"
+                        alt="steps"
+                        />
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-secondary fw-bold fs-0">
+                        <a href="#">Digital Learning Kebudayaan Indonesia</a>
+                        </h5>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aperiam at itaque nobis perspiciatis saepe! Architecto,
+                        blanditiis commodi consectetur consequatur consequuntur
+                        distinctio hic inventore labore omnis, quisquam recusandae
+                        soluta vitae voluptas?
+                        </p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            </div>
+            <!-- end of .container-->
+    </section>
+
+ 
+    <section id="destination">
         <div class="container">
         <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
             <img
@@ -344,11 +540,10 @@
         </div>
         <!-- end of .container-->
     </section>
-    <!-- <section> close ============================-->
 
-    <!-- <section> begin ============================-->
 
-    <section class="pt-5" id="destination">
+
+    {{-- <section class="pt-5" id="destination">
         <div class="container">
         <div
             class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
@@ -460,206 +655,34 @@
         </div>
         </div>
         <!-- end of .container-->
-    </section>
+    </section> --}}
 
-    <section id="services">
-        <div class="container">
-        <div class="row align-items-center">
-            <div
-            class="col-lg-6 d-flex justify-content-center align-items-start"
-            >
-            <div
-                class="card position-relative shadow"
-                style="max-width: 370px"
-            >
-                <div
-                class="position-absolute z-index--1 me-10 me-xxl-0"
-                style="right: -160px; top: -210px"
-                >
-                <img
-                    src="assets/img/steps/bg.png"
-                    style="max-width: 550px"
-                    alt="shape"
-                />
-                </div>
-                <div class="card-body p-3">
-                <img
-                    class="mb-4 mt-2 rounded-2 w-100"
-                    src="images/papua/2.jpg"
-                    alt="booking"
-                />
-                <div>
-                    <h5 class="fw-medium">Trip Raja empat</h5>
-                    <p class="fs--1 mb-3 fw-medium">
-                    14-29 June | by Robbin joseph
-                    </p>
-                    <div class="icon-group mb-4">
-                    <span class="btn icon-item">
-                        <img
-                        src="assets/img/steps/leaf.svg"
-                        alt="" /></span
-                    ><span class="btn icon-item">
-                        <img
-                        src="assets/img/steps/map.svg"
-                        alt="" /></span
-                    ><span class="btn icon-item">
-                        <img src="assets/img/steps/send.svg" alt=""
-                    /></span>
-                    </div>
-                    <div
-                    class="d-flex align-items-center justify-content-between"
-                    >
-                    <div class="d-flex align-items-center mt-n1">
-                        <img
-                        class="me-3"
-                        src="assets/img/steps/building.svg"
-                        width="18"
-                        alt="building"
-                        /><span class="fs--1 fw-medium">24 people going</span>
-                    </div>
-                    <div class="show-onhover position-relative">
-                        <div
-                        class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
-                        style="width: 260px; border-radius: 18px"
-                        >
-                        <div class="card-body py-3">
-                            <div class="d-flex">
-                            <div style="margin-right: 10px">
-                                <img
-                                class="rounded-circle"
-                                src="assets/img/steps/favorite-placeholder.png"
-                                width="50"
-                                alt="favorite"
-                                />
-                            </div>
-                            <div>
-                                <p class="fs--1 mb-1 fw-medium">Ongoing</p>
-                                <h5 class="fw-medium mb-3">Trip to rome</h5>
-                                <h6 class="fs--1 fw-medium mb-2">
-                                <span>40%</span> completed
-                                </h6>
-                                <div class="progress" style="height: 6px">
-                                <div
-                                    class="progress-bar"
-                                    role="progressbar"
-                                    style="width: 40%"
-                                    aria-valuenow="25"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <button class="btn">
-                        <img
-                            src="assets/img/steps/heart.svg"
-                            width="20"
-                            alt="step"
-                        />
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6">
-            <div class="mb-4 text-start">
-                <h3
-                class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                >
-                Our Services
+    
+
+    <section class="pt-5 pt-md-9" id="prototype">
+            <div class="container">
+              <div class="mb-7 text-center">
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                  Prototype
                 </h3>
                 <h5 class="text-secondary">
-                Tidak hanya berwisata secara virtual360,<br />
-                pengunjung dapat merasakan berbagai pengalaman menarik lainnya
-                dengan berbagai macam layanan yang tersedia.
+                  Rasakan pengalaman jelajah Indonesia secara virtual melalui prototype di bawah ini.
+                  <br>
+                  Klik tombol <i class="fa fa-info"></i> di bawah untuk tutorial penggunaan.
                 </h5>
+              </div>
+              <div class=" d-flex justify-content-center">
+                <iframe width="100%"
+                        height="720"
+                        src="https://www.artsteps.com/embed/62489e716b52fc7b54fa087e/1280/720" frameborder="0"
+                        allowfullscreen
+                >
+              </iframe>
+              </div>
             </div>
-            <a href="">
-                <div class="d-flex align-items-start mb-5">
-                <div
-                    class="bg-primary me-sm-4 me-3 p-3"
-                    style="border-radius: 13px"
-                >
-                    <img
-                    src="assets/img/steps/selection.svg"
-                    width="22"
-                    alt="steps"
-                    />
-                </div>
-                <div class="flex-1">
-                    <h5 class="text-secondary fw-bold fs-0">
-                    <a href="#">Virtual Tour 360</a>
-                    </h5>
-                    <p>
-                    Dengan teknologi 3D view 360 di mana memungkinkan
-                    <br class="d-none d-sm-block" />
-                    untuk mengelilingi Indonesia tanpa harus berpindah tempat.
-                    </p>
-                </div>
-                </div>
-            </a>
-            <a href="">
-                <div class="d-flex align-items-start mb-5">
-                <div
-                    class="bg-danger me-sm-4 me-3 p-3"
-                    style="border-radius: 13px"
-                >
-                    <img
-                    src="assets/img/steps/water-sport.svg"
-                    width="22"
-                    alt="steps"
-                    />
-                </div>
-                <div class="flex-1">
-                    <h5 class="text-secondary fw-bold fs-0">
-                    <a href="#">Pembelian Produk UMKM</a>
-                    </h5>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at itaque nobis perspiciatis saepe! Architecto,
-                    blanditiis commodi consectetur consequatur consequuntur
-                    distinctio hic inventore labore omnis, quisquam recusandae
-                    soluta vitae voluptas?
-                    </p>
-                </div>
-                </div>
-            </a>
-            <a href="">
-                <div class="d-flex align-items-start mb-5">
-                <div
-                    class="bg-info me-sm-4 me-3 p-3"
-                    style="border-radius: 13px"
-                >
-                    <img
-                    src="assets/img/steps/taxi.svg"
-                    width="22"
-                    alt="steps"
-                    />
-                </div>
-                <div class="flex-1">
-                    <h5 class="text-secondary fw-bold fs-0">
-                    <a href="#">Digital Learning Kebudayaan Indonesia</a>
-                    </h5>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at itaque nobis perspiciatis saepe! Architecto,
-                    blanditiis commodi consectetur consequatur consequuntur
-                    distinctio hic inventore labore omnis, quisquam recusandae
-                    soluta vitae voluptas?
-                    </p>
-                </div>
-                </div>
-            </a>
-            </div>
-        </div>
-        </div>
-        <!-- end of .container-->
+            <!-- end of .container-->
     </section>
-    <!-- <section> close ============================-->
+
 
     <section id="testimonial">
         <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
@@ -844,6 +867,8 @@
         </div>
         <!-- end of .container-->
     </section>
+
+    
 
     <!-- <section> begin ============================-->
     <section id="partners">

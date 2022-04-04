@@ -13,5 +13,6 @@
   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
   rel="stylesheet"
 />
+<meta name="theme-color" content="#ffffff" />
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />

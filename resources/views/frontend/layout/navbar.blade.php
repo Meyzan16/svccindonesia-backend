@@ -23,7 +23,7 @@
         >
           <li class="nav-item px-3 px-xl-4">
             <a
-              class="nav-link text-danger fw-medium"
+              class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="#aboutus"
               ><i class="fas fa-question-circle text-warning"></i> About
@@ -31,24 +31,31 @@
             >
           </li>
 
-       
-          <li class="nav-item px-3 px-xl-4">
-            <a class="nav-link text-danger fw-medium" aria-current="page" href="#destination">Destination</a>
-
-          </li>
-
           <li class="nav-item px-3 px-xl-4">
             <a
-              class="nav-link text-danger fw-medium"
+              class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="#services"
               >Services</a
             >
           </li>
+       
+          <li class="nav-item px-3 px-xl-4">
+            <a class="nav-link text-kuning fw-medium" aria-current="page" href="#destination">Destination</a>
+          </li>
+
+          <li class="nav-item px-3 px-xl-4">
+                            <a class="nav-link text-kuning fw-medium"
+                               aria-current="page"
+                               href="#prototype">Prototype</a
+                            >
+                          </li>
+
+
 
           <li class="nav-item px-3 px-xl-4">
             <a
-              class="nav-link text-danger fw-medium"
+              class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="#testimonial"
               >Testimonial</a
@@ -57,15 +64,16 @@
 
           <li class="nav-item px-3 px-xl-4">
             <a
-              class="nav-link text-danger fw-medium"
+              class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="#partners"
               >Our Partners</a
             >
           </li>
+
           <li class="nav-item px-3 px-xl-4">
             <a
-              class="nav-link text-danger fw-medium"
+              class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="login.html"
               >Login</a
