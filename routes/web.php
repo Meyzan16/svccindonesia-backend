@@ -19,8 +19,9 @@ Route::get('/', function () {
     return view('frontend.homepage.index');
 });
 
-
-    
+Route::get('/about-us', function () {
+    return view('frontend.homepage.about-us');
+});
         Route::group(['prefix'  => 'brand/'],function(){
             Route::get('/', [CategoryBrandController::Class, 'index'])->name('category-brand');
             Route::get('/{slug}', [CategoryBrandController::Class, 'show'])->name('category-brand-detail');
