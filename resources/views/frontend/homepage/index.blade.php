@@ -472,7 +472,7 @@
                                     width="75"
                                     alt="Service"
                                 />
-                                <h4 class="mb-3">Sulawesi Selatan</h4>
+                                <h4 class="mb-3">Sulawesi Tenggara</h4>
                             </div>
                         </div>
                     </a>
