@@ -31,7 +31,7 @@
               data-aos="fade-up"
               data-aos-delay="{{ $incrementCategory += 100 }}"
                 >
-              <a href="#" class="component-categories d-block">
+              <a href="{{ route('category-provinsi-detail', $category->slug) }}" class="component-categories d-block">
                 <div class="categories-image">
                   <img src="{{ Storage::url($category->photo) }}" alt="" class="w-100" />
                 </div>
