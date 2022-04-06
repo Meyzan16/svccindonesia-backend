@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CategoryBrandController;
 use App\Http\Controllers\CategoryProvinsiController;
 
@@ -22,6 +23,7 @@ Route::get('/', function () {
 Route::get('/about-us', function () {
     return view('frontend.homepage.about-us');
 });
+
         Route::group(['prefix'  => 'brand/'],function(){
             Route::get('/', [CategoryBrandController::Class, 'index'])->name('category-brand');
             Route::get('/{slug}', [CategoryBrandController::Class, 'show'])->name('category-brand-detail');
@@ -32,4 +34,5 @@ Route::get('/about-us', function () {
             Route::get('/{slug}', [CategoryProvinsiController::Class, 'show'])->name('category-provinsi-detail');
         });
 
+        Route::get('/detail/{slug}', [DetailController::Class, 'index'] )->name('detail');
 
