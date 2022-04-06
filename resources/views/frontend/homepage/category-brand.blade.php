@@ -12,10 +12,11 @@
 <div class="page-content page-home">
     <!-- categories -->
     <section class="store-trend-categories">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up">
-            <h5>Kategori</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <h1>Browse souvenir by their category.</h1>
+                    <h5>Kategori</h5>
           </div>
         </div>
 
@@ -53,10 +54,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
-            <h5>Product {{ Request::segment(2) }} </h5>
+              <h1>Browse all available products.</h1>
+            <h5>Produk {{ Request::segment(2) }} </h5>
           </div>
         </div>
-        
+
         <div class="row">
           @php
               $incrementProduct= 0
@@ -72,9 +74,9 @@
                 <div class="products-thumbnail">
                   <div
                     class="products-image"
-                    
+
                     style="
-                     
+
                       @if($product->gallaries)
                         background-image: url('{{ Storage::url($product->gallaries->first()->photos) }}')
                       @else

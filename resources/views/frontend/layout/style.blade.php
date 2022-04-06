@@ -1,4 +1,4 @@
-<link rel="icon" href="/images/logo.jpeg" />
+<link rel="icon" href="/images/logo.jpeg" class="rounded-circle"/>
 <meta
   name="msapplication-TileImage"
   content="/assets/img/favicons/mstile-150x150.png"
@@ -15,4 +15,4 @@
 />
 <meta name="theme-color" content="#ffffff" />
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>

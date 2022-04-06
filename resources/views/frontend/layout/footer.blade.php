@@ -16,7 +16,7 @@
           <li class="mb-2">
             <a
               class="link-900 fs-1 fw-medium text-decoration-none"
-              href="#aboutus">
+              href="/about-us">
               About Us
             </a>
           </li>
@@ -121,4 +121,3 @@
   </div>
   <!-- end of .container-->
 </section>
- 
