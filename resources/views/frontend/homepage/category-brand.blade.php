@@ -29,6 +29,7 @@
                     @forelse ($categories as $category)
                         <div class="col-6 col-md-3 col-lg-2"
                              data-aos="fade-up"
+
                              data-aos-delay="{{ $incrementCategory += 100 }}"
                         >
                             <a href="{{ route('category-brand-detail', $category->slug) }}"
