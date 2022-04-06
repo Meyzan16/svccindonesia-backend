@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CategoryBrandController;
 use App\Http\Controllers\CategoryProvinsiController;
@@ -16,9 +17,7 @@ use App\Http\Controllers\CategoryProvinsiController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.homepage.index');
-});
+Route::get('/', [HomeController::Class, 'index'])->name('homepage');
 
 Route::get('/about-us', function () {
     return view('frontend.homepage.about-us');

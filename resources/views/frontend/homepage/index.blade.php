@@ -410,121 +410,53 @@
 
     <section id="destination">
         <div class="container">
-            <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
-                <img
-                    src="assets/img/category/shape.svg"
-                    style="max-width: 200px"
-                    alt="service"
-                />
-            </div>
-            <div class="mb-7 text-center">
-                <h3
-                    class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                >
-                    Destination
-                </h3>
-                <h5 class="text-secondary">
-                    Berbagai macam destinasi terbaik yang dapat dikunjungi secara
-                    virtual360 di sini.
-                </h5>
-            </div>
-            <div class="row">
+
+          
+                    <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
+                        <img
+                            src="assets/img/category/shape.svg"
+                            style="max-width: 200px"
+                            alt="service"
+                        />
+                    </div>
+                    <div class="mb-7 text-center">
+                        <h3
+                            class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+                        >
+                            Destination
+                        </h3>
+                        <h5 class="text-secondary">
+                            Berbagai macam destinasi terbaik yang dapat dikunjungi secara
+                            virtual360 di sini.
+                        </h5>
+                    </div>
+     
+            <div class="row">             
+
+                @foreach ($categori_provinsi as $item)
+                    
+          
                 <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
+                    <a href="{{ route('category-provinsi-detail', $item->slug) }}">
                         <div
                             class="card service-card shadow-hover rounded-3 text-center align-items-center"
                         >
                             <div class="card-body p-xxl-5 p-4">
                                 <img
-                                    src="assets/img/category/icon2.png"
-                                    width="75"
-                                    alt="Service"
-                                />
-                                <h4 class="mb-3">Sumatera Utara</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="assets/img/category/Borobudur.png"
+                                    src="{{ Storage::url($item->photo) }}"
                                     width="100%"
                                     alt="Borobudur-Jawa Tengah"
                                 />
-                                <h4 class="mb-3">Jawa Tengah</h4>
+                                <h4 class="mb-3">{{ $item->name }}</h4>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="assets/img/category/icon2.png"
-                                    width="75"
-                                    alt="Service"
-                                />
-                                <h4 class="mb-3">Sulawesi Tenggara</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="assets/img/category/icon2.png"
-                                    width="75"
-                                    alt="Service"
-                                />
-                                <h4 class="mb-3">Kalimantan Tengah</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="assets/img/category/mandalika.png"
-                                    width="100%"
-                                    alt="Mandalika-NTB"
-                                />
-                                <h4 class="mb-3">NTB</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="kategori.html">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="assets/img/category/wakatobi.png"
-                                    width="100%"
-                                    alt="Wakatobi-Papua"
-                                />
-                                <h4 class="mb-3">Papua</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                @endforeach
+
+              
+              
+               
             </div>
         </div>
         <!-- end of .container-->

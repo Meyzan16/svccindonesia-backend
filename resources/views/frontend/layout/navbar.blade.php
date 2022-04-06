@@ -39,12 +39,14 @@
           <li class="nav-item px-0 px-xl-3">
             <a class="nav-link text-kuning fw-medium" aria-current="page" href="/#destination">Destination</a>
           </li>
+
           <li class="nav-item px-0 px-xl-3">
               <a class="nav-link text-kuning fw-medium"
                  aria-current="page"
-                 \href="/#prototype">Prototype
+                 href="/#prototype">Prototype
               </a>
           </li>
+
           <li class="nav-item px-0 px-xl-3">
             <a
               class="nav-link text-kuning fw-medium"
