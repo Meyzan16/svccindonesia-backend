@@ -10899,7 +10899,7 @@ footer p {
 }
 
 .page-details .store-gallery {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .page-details .store-gallery img {
@@ -10907,7 +10907,7 @@ footer p {
 }
 
 .page-details .store-gallery .thumbnail-image {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   border: 2px solid transparent;
 }
 
@@ -10916,7 +10916,7 @@ footer p {
 }
 
 .page-details .store-heading {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .page-details .store-heading h1 {
@@ -10932,15 +10932,15 @@ footer p {
   font-size: 14px;
   line-height: 21px;
   color: #979797;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .page-details .store-heading .price {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 27px;
   color: #ff7158;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .page-details .store-description {
