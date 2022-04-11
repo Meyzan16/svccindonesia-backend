@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CategoryBrandController;
 use App\Http\Controllers\CategoryProvinsiController;
+use App\Http\Controllers\Admin\CategoryAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,10 @@ Route::get('/about-us', function () {
 
         Route::get('/detail/{slug}', [DetailController::Class, 'index'] )->name('detail');
 
+        //fungsi prefix untuk memanggil satu kesatuan // ADMIN
+        Route::prefix('admin')->namespace('')->group(function(){
+            Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin'); 
+            Route::resource('category', CategoryAdminController::class);
+            // Route::resource('product', ProductAdminController::class);
+            // Route::resource('product-gallery', ProductGalleryAdminController::class);
+        });
