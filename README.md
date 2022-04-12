@@ -17,8 +17,9 @@
 - Clone this repository to your local | <span style="color: #14859B">$git clone https://github.com/Meyzan16/svccindonesia-backend.git </span>
 - Copy & paste <span style="color: #EB913F">.env.example</span> then rename to <span style="color: #EB913F">.env</span>
 - Change DB environment such as name and password 
-- Run in terminal and wait until finish <span style="color: #14859B">$composer install</span> or <span style="color:#14859B">$composer update</span>- Run in terminal and wait until finish <span style="color: #14859B">$php artian key:generate</span>
+- Run in terminal and wait until finish <span style="color: #14859B">$composer install</span> or <span style="color:#14859B">$composer update</span>
 - Run in terminal and wait until finish <span style="color: #14859B">$npm i</span>
+- Run in terminal and wait until finish <span style="color: #14859B">$php artian key:generate</span>
 - Run in terminal and wait until finish <span style="color: #14859B">$php artian migrate</span>
 - Run in terminal and wait until finish <span style="color: #14859B">$php artian serve</span>
 
