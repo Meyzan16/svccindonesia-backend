@@ -74,26 +74,20 @@ class ProductAdminController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $item = Products::FindorFail($id);
+        $categories = Categories::all();
+        $users = User::all();
+        $kategori_provinsi = Categori_provinsi::all();
+
+        return view('backend.admin.product.edit', compact('item','categories', 'users' , 'kategori_provinsi'));
     }
 
     /**
@@ -105,7 +99,10 @@ class ProductAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        Products::FindorFail($id)->update($data);
+        return redirect()->route('product.index')->with('success', 'Data berhasil di perbarui');
     }
 
     /**

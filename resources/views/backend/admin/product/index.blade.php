@@ -13,7 +13,7 @@
       </div>
 
       <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-12">
             @if(session()->has('success'))
             <div class="autohide">
                 <div class="alert alert-success autohide" role="alert">
@@ -62,8 +62,8 @@
                                                         Aksi
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="{{ route('category.edit', $item->id ) }}"> Edit </a>
-                                                        <form action="{{ route('category.destroy', $item->id) }}" method="POST" >
+                                                        <a class="dropdown-item" href="{{ route('product.edit', $item->id ) }}"> Edit </a>
+                                                        <form action="{{ route('product.destroy', $item->id) }}" method="POST" >
                                                             @method('delete')
                                                             @csrf
                                                             <button type="submit" class="dropdown-item text-danger">
