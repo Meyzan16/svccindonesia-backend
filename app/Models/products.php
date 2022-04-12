@@ -16,6 +16,7 @@ class products extends Model
         'name',
         'users_id',
         'categories_id',
+        'categori_provinsi_id',
         'price',
         'description',
         'slug'
@@ -35,14 +36,15 @@ class products extends Model
         return $this->hasOne(User::class, 'id' , 'users_id');
     }
 
-    public function Categories()
+    //belongs to untuk kata kunci primary key
+    public function categories()
     {
-        return $this->belongsTo(Categories::class, 'categories_id', 'id' );
+        return $this->belongsTo(Categories::class, 'categories_id' );
     }
 
     public function category_provinsi()
     {
-        return $this->belongsTo(Categori_provinsi::class, 'categori_provinsi_id', 'id' );
+        return $this->belongsTo(Categori_provinsi::class, 'categori_provinsi_id');
     }
 
     

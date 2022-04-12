@@ -38,7 +38,7 @@
             >
 
             <a
-              href="/"
+              href="{{ route('product.index') }}"
               class="list-group-item list-group-item-action {{ request()->is('admin/product') ? 'active' : '' }} "
               >Product</a
             >
@@ -50,7 +50,7 @@
             >
             
             <a
-              href="/"
+              href="{{ route('category.index') }}"
               class="list-group-item list-group-item-action {{ request()->is('admin/category*') ? 'active' : '' }}"
               >Categories</a
             >
@@ -155,6 +155,11 @@
     <script>
       AOS.init();
     </script>
+     <script>
+      $(document).ready( function () {
+          $('#myTable').DataTable();
+      } );
+   </script>
     <script>
       $('#menu-toggle').click(function(e) {
         e.preventDefault();

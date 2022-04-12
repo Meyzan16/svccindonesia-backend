@@ -8,8 +8,10 @@ use App\Models\Categories;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Elequent\SoftDeletes;
-
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File; 
+
 
 use App\Http\Requests\Admin\CategoryAdminRequest;
 
@@ -33,16 +35,35 @@ class CategoryAdminController extends Controller
       return \view('backend.admin.category.create');
     }
 
-    public function store(CategoryAdminRequest $request)
+    public function store(Request $request)
     {
-        //sebelum di ambil request di jalankan dulu rules nya di categoryAdminrequst
         $data = $request->all();
+        $rules = [
+            'name'=>'required|string',
+            'photo' => 'required|image|file|max:1024'
+        ];
 
-        $rand_slug = Str::slug(rand(5,100).'_'.$request->name);
+        $message = [
+            'name.string' => 'Nama kategori bersifat huruf',
+            'photo.image' => 'Yang anda upload bukan extension image',
+            'photo.max' => 'Ukuran poto maksimal 2 MB'
+
+        ];
+        
+        $validator = Validator::make($request->all(), $rules, $message);
+
+        if($validator->fails())
+        {
+            return redirect()->back()->withErrors($validator)->withInput($request->all());
+        }
+
+        //sebelum di ambil request di jalankan dulu rules nya di 
+
+        $rand_slug = Str::slug($request->name);
         $data['slug'] = $rand_slug; //name itu yang kolom di database
         $data['photo'] = $request->file('photo')->store('assets/category', 'public');
 
-        Category::create($data);
+        Categories::create($data);
 
         return \redirect()->route('category.index');
     }
@@ -58,39 +79,33 @@ class CategoryAdminController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function edit($id)
     {
         //findorfail jika data tidak ada, kembalikan 404
-        $item = Category::findorfail($id);
+        $item = Categories::findorfail($id);
 
-        return \view('backend.admin.category.edit',[
-            'item' => $item
-        ]);
+        return \view('backend.admin.category.edit', compact('item'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(CategoryAdminRequest $request, $id)
+   
+    public function update(Request $request, $id)
     {
         $data = $request->all();
 
-        $rand_slug = Str::slug(rand(5,100).'_'.$request->name);
+        if($request->file('photo'))
+        {
+            if($request->input('oldImage')){
+                unlink('storage/'.$request->oldImage);
+            }
+            $data['photo'] = $request->file('photo')->store('assets/category', 'public');
+        }
+
+        $rand_slug = Str::slug($request->name);
         $data['slug'] = $rand_slug; //name itu yang kolom di database
-        $data['photo'] = $request->file('photo')->store('assets/category', 'public');
 
         //diambil dulu
-        $item = Category::findorfail($id);
+        $item = Categories::findorfail($id);
         $item->update($data);
 
         return \redirect()->route('category.index');
@@ -104,9 +119,12 @@ class CategoryAdminController extends Controller
      */
     public function destroy($id)
     {
-        $item = Category::findorfail($id);
+        $item = Categories::findorfail($id);
+        unlink('storage/'.$item->photo);
         $item->delete($item);
 
         return redirect()->route('category.index');
     }
+
+
 }
