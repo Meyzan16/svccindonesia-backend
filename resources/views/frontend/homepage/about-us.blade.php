@@ -4,6 +4,10 @@
     Indonesian 360 Tour - Home
 @endsection
 
+@push('prepend-style')
+    <link href="/style/main.css" rel="stylesheet"/>
+@endpush
+
 @section('content')
 
     <section id="aboutus" class="pb-4" style="padding-top: 7rem">
@@ -11,7 +15,8 @@
         <!--/.bg-holder-->
         <div class="bg-white"></div>
         <!--close of /.bg-holder-->
-        <div class="container mt-6 align-items-center text-start">
+        <div class="container mt-6 align-items-center text-start"
+             data-aos="zoom-in">
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                 About Us
             </h3>
@@ -42,7 +47,9 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 d-flex justify-content-center align-items-start mb-sm-5">
-                    <div class="card position-relative shadow" style="max-width: 370px">
+                    <div class="card position-relative shadow"
+                         style="max-width: 370px"
+                         data-aos="zoom-in">
                         <div class="position-absolute z-index--1 me-10 me-xxl-0" style="right: -160px; top: -210px">
                             <img
                                 src="assets/img/steps/bg.png"
@@ -89,7 +96,7 @@
     </section>
 
     <section id="video" class="py-4">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="align-items-center">
                 <div class="mb-4 text-center">
                     <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
@@ -119,278 +126,409 @@
     </section>
 
     <section id="our-team" class="bg-light py-4">
-        <div class="position-relative pt-3 pt-lg-2 pb-6 pb-lg-8">
-            <div class="container">
-                <div class="text-center">
-                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                        Our Team Member
-                    </h3>
-                    <h5 class="text-secondary">
-                        Beberapa anggota yang ikut andil dalam membangun Indonesian 360 Tour.
-                    </h5>
-                </div>
+        <div class="container pt-3 pt-lg-2 pb-6 pb-lg-8 position-relative" data-aos="fade-up">
 
-                <div class="row text-center justify-content-center align-content-center d-flex">
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/abiwisnu.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Abi Wisnu</h5>
-                                <p class="fw-medium justify-content-center d-flex">Business Development</p>
-                                <a href="https://instagram.com/@abiwisnu_"
-                                   class="text-biru fw-medium justify-content-center d-flex">@abiwisnu</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/adamarga.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Adam Arga</h5>
-                                <p class="fw-medium justify-content-center d-flex">Digital Marketing</p>
-                                <a href="https://instagram.com/@adam_arga"
-                                   class="text-biru fw-medium justify-content-center d-flex">@adam_arga</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/agustiyani.jpeg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Agus Gustiyani</h5>
-                                <p class="fw-medium justify-content-center d-flex">3D Content Creator</p>
-                                <a href="https://instagram.com/@agustiyanii_"
-                                   class="text-biru fw-medium justify-content-center d-flex">@agustiyanii_</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/aqshalmarta.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Aqshal Marta Yudha</h5>
-                                <p class="fw-medium justify-content-center d-flex">Web Developer</p>
-                                <a href="https://instagram.com/@aqsshalmarta"
-                                   class="text-biru fw-medium justify-content-center d-flex">@aqshalmarta</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/azzara.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Azzara Putri Elvaza</h5>
-                                <p class="fw-medium justify-content-center d-flex">Business Development</p>
-                                <a href="https://instagram.com/@azzaraelvaza"
-                                   class="text-biru fw-medium justify-content-center d-flex">@azzaraelvaza</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/meyzan.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Meyzan Al Yutra</h5>
-                                <p class="fw-medium justify-content-center d-flex">Web Developer</p>
-                                <a href="https://instagram.com/@adzanmagrib"
-                                   class="text-biru fw-medium justify-content-center d-flex">@adzanmagrib</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/rafli.jpg"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Rafli Naufal Suhandani</h5>
-                                <p class="fw-medium justify-content-center d-flex">3D Content Creator</p>
-                                <a href="https://instagram.com/@raflinauvall_"
-                                   class="text-biru fw-medium justify-content-center d-flex">@raflinauvall_</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Alif Ghifari Putra</h5>
-                                <p class="fw-medium justify-content-center d-flex">Business Development</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@alif</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="text-center">
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                    Our Team Member
+                </h3>
+                <h5 class="text-secondary">
+                    Beberapa anggota yang ikut andil dalam membangun Indonesian 360 Tour.
+                </h5>
+            </div>
 
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Apriyanita Egi H.</h5>
-                                <p class="fw-medium justify-content-center d-flex">3D Content Creator</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@egi</a>
+            <div class="row text-center justify-content-center align-content-center d-flex">
+                <div class="col-lg-12 mt-4 carousel slide carousel-fade position-static"
+                     id="ourTeamIndicator"
+                     data-bs-ride="carousel">
+                    {{--isi dari section/carousel--}}
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active">
+                            <h1 data-aos="zoom-out" class="text-kuning">Web Developer</h1>
+                            <div class="row justify-content-center align-content-center">
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img alt="Member of id360tour"
+                                             class="card-img-top"
+                                             src="images/team-member/aqshalmarta.jpg"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Aqshal Marta Yudha</div>
+                                            <p class="card-text">Web Developer</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/aqshalmarta" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/aqshalmarta" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/meyzan.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Meyzan Al Yutra</div>
+                                            <p class="card-text">Web Developer</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/adzanmagrib.e" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/ginal.jpeg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Ginal Fikri Al Hakim</div>
+                                            <p class="card-text">Web Developer</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/ginalhakim_" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/team_profile.png"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Saddam</div>
+                                            <p class="card-text">Web Developer</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <h1 data-aos="zoom-out" class="text-kuning">Digital Marketing</h1>
+                            <div class="row justify-content-center align-content-center">
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/tasha.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Tasha Mutiara P.Sonjaya</div>
+                                            <p class="card-text">Digital Marketing</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/tshmutiara" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/adamarga.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Adam Arga</div>
+                                            <p class="card-text">Digital Marketing</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/adam_arga" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/reyna.heic"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Reyna Oktavriana</div>
+                                            <p class="card-text">Digital Marketing</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/reynaoktav" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/dhifie.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Dhifie Naufalindhia</div>
+                                            <p class="card-text">Digital Marketing</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/dhifienaufalin" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <h1 data-aos="zoom-out" class="text-kuning">Business Development</h1>
+                            <div class="row justify-content-center align-content-center">
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/abiwisnu.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Abi Wisnu</div>
+                                            <p class="card-text">Business Development</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/abiswisnu_" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/ami.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Salsabilah Nur Rahmi</div>
+                                            <p class="card-text">Business Development</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/salsabilah_ami" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/zara.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Azzara Putri Elvaza</div>
+                                            <p class="card-text">Business Development</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/azzaraelvaza" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/team_profile.png"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Alif Ghifari Putra</div>
+                                            <p class="card-text">Business Development</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <h1 data-aos="zoom-out" class="text-kuning">3D Content Creator</h1>
+                            <div class="row justify-content-center align-content-center">
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/agustiyani.jpeg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Agus Gustiyani</div>
+                                            <p class="card-text">3D Content Creator</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/agustiyanii_" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/team_profile.png"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Maulana Ibrahim</div>
+                                            <p class="card-text">3D Content Creator</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/salsabilah_ami" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/rafli.jpg"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Rafli Naufal Suhandani</div>
+                                            <p class="card-text">3D Content Creator</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-6 mt-4">
+                                    <div class="card" style="width: 15.75rem;">
+                                        <img class="card-img-top"
+                                             src="images/team-member/team_profile.png"
+                                             alt="Member of id360tour"
+                                             style="max-height: 300px;height: 300px">
+                                        <div class="card-body"
+                                             style="height: 200px">
+                                            <div class="fw-bold text-black p-1 card-title">Apriyanita Egi Hardiyanti
+                                            </div>
+                                            <p class="card-text">3D Content Creator</p>
+                                            <div class="mt-5"></div>
+                                            <a href="https://instagram.com/" class="btn btn-merah">
+                                                <span class="fab fa-instagram"></span>
+                                            </a>
+                                            <a href="https://linkedin.com/in/" class="btn btn-biru">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Maulana Ibrahim</h5>
-                                <p class="fw-medium justify-content-center d-flex">3D Content Creator</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@ibre</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Reyna Oktavriana</h5>
-                                <p class="fw-medium justify-content-center d-flex">Digital Marketing</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@reyna</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Salsabilah Nur Rahmi</h5>
-                                <p class="fw-medium justify-content-center d-flex">Business Development</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@ami</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Tasha Mutiara P. S</h5>
-                                <p class="fw-medium justify-content-center d-flex">Digital Marketing</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@Tasha</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Dhifie Naufalinda</h5>
-                                <p class="fw-medium justify-content-center d-flex">Digital Marketing</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@dhifie</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 350px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Saddam</h5>
-                                <p class="fw-medium justify-content-center d-flex">Web Developer</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@saddam</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6 mt-4">
-                        <div class="card position-relative shadow" style="max-width: 370px">
-                            <div class="card-body p-3 mb-4">
-                                <img
-                                    class="mb-4 mt-2 rounded-2"
-                                    style="min-width:100%;max-width:100%;min-height:250px;max-height: 250px; background-size: cover"
-                                    src="images/team-member/team_profile.png"
-                                    alt="team member"
-                                />
-                                <h5 class="fw-medium justify-content-center d-flex">Ginal</h5>
-                                <p class="fw-medium justify-content-center d-flex">Web Developer</p>
-                                <a href="https://instagram.com/@"
-                                   class="text-biru fw-medium justify-content-center d-flex">@Ginal</a>
-                            </div>
-                        </div>
+                    {{--navigasi titik--}}
+
+                    <div class="carousel-indicators">
+                        <button
+                            class="active"
+                            type="button"
+                            data-bs-target="#ourTeamIndicator"
+                            data-bs-slide-to="0"
+                            aria-current="true"
+                            aria-label="Our Team 0"
+                        ></button>
+                        <button
+                            class="false"
+                            type="button"
+                            data-bs-target="#ourTeamIndicator"
+                            data-bs-slide-to="1"
+                            aria-current="true"
+                            aria-label="Our Team 1"
+                        ></button>
+                        <button
+                            class="false"
+                            type="button"
+                            data-bs-target="#ourTeamIndicator"
+                            data-bs-slide-to="2"
+                            aria-current="true"
+                            aria-label="Our Team 2"
+                        ></button>
+                        <button
+                            class="false"
+                            type="button"
+                            data-bs-target="#ourTeamIndicator"
+                            data-bs-slide-to="3"
+                            aria-current="true"
+                            aria-label="Our Team 3"
+                        ></button>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
 @endsection
+
+@push('addon-script')
+    <script src="/vendor/vue/vue.js"></script>
+@endpush
