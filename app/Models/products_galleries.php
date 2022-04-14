@@ -13,6 +13,6 @@ class products_galleries extends Model
     //satu prodak mempunyai banyak foto
     public function product()
     {                                            
-        return $this->belongsTo(Products::class, 'products_id', 'id');
+        return $this->belongsTo(Products::class, 'products_id');
     }
 }

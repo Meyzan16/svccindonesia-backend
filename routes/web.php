@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryBrandController;
 use App\Http\Controllers\CategoryProvinsiController;
 use App\Http\Controllers\Admin\CategoryAdminController;
 use App\Http\Controllers\Admin\ProductAdminController;
+use App\Http\Controllers\Admin\ProductGalleryAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +43,5 @@ Route::get('/about-us', function () {
             Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin'); 
             Route::resource('category', CategoryAdminController::class);
             Route::resource('product', ProductAdminController::class);
-            // Route::resource('product-gallery', ProductGalleryAdminController::class);
+            Route::resource('product-gallery', ProductGalleryAdminController::class);
         });

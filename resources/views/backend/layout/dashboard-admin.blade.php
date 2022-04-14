@@ -44,7 +44,7 @@
             >
 
             <a
-              href="/"
+              href="{{ route('product-gallery.index') }}"
               class="list-group-item list-group-item-action {{ request()->is('admin/product-gallery*') ? 'active' : '' }} "
               >Gallery Product</a
             >
