@@ -5,14 +5,13 @@
 @endsection
 
 @section('content')
-    <section style="padding-top: 7rem">
+    <section style="padding-top: 6.5rem">
         <!--/.bg-holder-->
-        <div
-            class="bg-holder"
-            style="background-image: url(/images/background.jpg)"
-        ></div>
+        <div class="bg-holder"
+             style="background-image: url(/images/background.jpg)">
+        </div>
         <!--close of /.bg-holder-->
-        <div class="container mt-6">
+        <div class="container mt-6" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="col-md-5 col-lg-6 order-1 order-md-1 text-end">
                     <img
@@ -76,13 +75,11 @@
     </section>
 
     <section id="aboutus">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="mb-4 text-start">
-                        <h3
-                            class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                        >
+                        <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                             About Us
                         </h3>
                     </div>
@@ -90,8 +87,7 @@
                     <div class="d-flex align-items-start mb-5">
                         <div class="flex-1">
                             <h5 class="text-secondary fw-bold fs-0"></h5>
-                            <p>
-                                Indonesian 360 Tour adalah platform penyedia jasa tampilan
+                            <p>Indonesian 360 Tour adalah platform penyedia jasa tampilan
                                 visual di bidang wisata dan culture Indonesia yang disajikan
                                 dalam 360 derajat untuk memberikan experience baru dalam
                                 menikmati indahnya Indonesia dan membantu pelaku UMKM hanya
@@ -212,20 +208,14 @@
         <!-- end of .container-->
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="zoom-in">
         <div class="container">
             <div class="row align-items-center">
-                <div
-                    class="col-lg-6 d-flex justify-content-center align-items-start"
-                >
-                    <div
-                        class="card position-relative shadow"
-                        style="max-width: 370px"
-                    >
-                        <div
-                            class="position-absolute z-index--1 me-10 me-xxl-0"
-                            style="right: -160px; top: -210px"
-                        >
+                <div class="col-lg-6 d-flex justify-content-center align-items-start">
+                    <div class="card position-relative shadow"
+                         style="max-width: 370px">
+                        <div class="position-absolute z-index--1 me-10 me-xxl-0"
+                             style="right: -160px; top: -210px">
                             <img
                                 src="assets/img/steps/bg.png"
                                 style="max-width: 550px"
@@ -233,80 +223,76 @@
                             />
                         </div>
                         <div class="card-body p-3">
-                            <img
-                                class="mb-4 mt-2 rounded-2 w-100"
-                                src="images/papua/2.jpg"
-                                alt="booking"
+                            <img class="mb-4 mt-2 rounded-2 w-100"
+                                 src="images/papua/2.jpg"
+                                 alt="booking"
                             />
-                            <div>
+                            <div class="">
                                 <h5 class="fw-medium">Trip Raja empat</h5>
-                                <p class="fs--1 mb-3 fw-medium">
-                                    14-29 June | by Robbin joseph
-                                </p>
+                                <p class="fs--1 mb-3 fw-medium">14-29 June | by Robbin joseph</p>
                                 <div class="icon-group mb-4">
-                        <span class="btn icon-item">
-                            <img
-                                src="assets/img/steps/leaf.svg"
-                                alt=""/></span
-                        ><span class="btn icon-item">
-                            <img
-                                src="assets/img/steps/map.svg"
-                                alt=""/></span
-                                    ><span class="btn icon-item">
-                            <img src="assets/img/steps/send.svg" alt=""
-                            /></span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/leaf.svg"
+                                             alt=""
+                                        />
+                                    </span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/map.svg"
+                                             alt=""
+                                        />
+                                    </span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/send.svg"
+                                             alt="send"
+                                        />
+                                    </span>
                                 </div>
-                                <div
-                                    class="d-flex align-items-center justify-content-between"
-                                >
+                                <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center mt-n1">
                                         <img
                                             class="me-3"
                                             src="assets/img/steps/building.svg"
                                             width="18"
                                             alt="building"
-                                        /><span class="fs--1 fw-medium">24 people going</span>
+                                        />
+                                        <span class="fs--1 fw-medium">24 people going</span>
                                     </div>
                                     <div class="show-onhover position-relative">
                                         <div
                                             class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
-                                            style="width: 260px; border-radius: 18px"
-                                        >
+                                            style="width: 260px; border-radius: 18px">
                                             <div class="card-body py-3">
                                                 <div class="d-flex">
                                                     <div style="margin-right: 10px">
-                                                        <img
-                                                            class="rounded-circle"
-                                                            src="assets/img/steps/favorite-placeholder.png"
-                                                            width="50"
-                                                            alt="favorite"
+                                                        <img class="rounded-circle"
+                                                             src="assets/img/steps/favorite-placeholder.png"
+                                                             width="50"
+                                                             alt="favorite"
                                                         />
                                                     </div>
-                                                    <div>
+                                                    <div class="">
                                                         <p class="fs--1 mb-1 fw-medium">Ongoing</p>
                                                         <h5 class="fw-medium mb-3">Trip to rome</h5>
                                                         <h6 class="fs--1 fw-medium mb-2">
                                                             <span>40%</span> completed
                                                         </h6>
                                                         <div class="progress" style="height: 6px">
-                                                            <div
-                                                                class="progress-bar"
-                                                                role="progressbar"
-                                                                style="width: 40%"
-                                                                aria-valuenow="25"
-                                                                aria-valuemin="0"
-                                                                aria-valuemax="100"
-                                                            ></div>
+                                                            <div class="progress-bar"
+                                                                 role="progressbar"
+                                                                 style="width: 40%"
+                                                                 aria-valuenow="25"
+                                                                 aria-valuemin="0"
+                                                                 aria-valuemax="100">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <button class="btn">
-                                            <img
-                                                src="assets/img/steps/heart.svg"
-                                                width="20"
-                                                alt="step"
+                                            <img src="assets/img/steps/heart.svg"
+                                                 width="20"
+                                                 alt="step"
                                             />
                                         </button>
                                     </div>
@@ -328,22 +314,18 @@
                     </div>
                     <a href="">
                         <div class="d-flex align-items-start mb-5">
-                            <div
-                                class="bg-primary me-sm-4 me-3 p-3"
-                                style="border-radius: 13px"
-                            >
-                                <img
-                                    src="assets/img/steps/selection.svg"
-                                    width="22"
-                                    alt="steps"
+                            <div class="bg-primary me-sm-4 me-3 p-3"
+                                 style="border-radius: 13px">
+                                <img src="assets/img/steps/selection.svg"
+                                     width="22"
+                                     alt="steps"
                                 />
                             </div>
                             <div class="flex-1">
                                 <h5 class="text-secondary fw-bold fs-0">
                                     <a href="#prototype">Virtual Tour 360</a>
                                 </h5>
-                                <p>
-                                    Dengan teknologi 3D view 360 di mana memungkinkan
+                                <p>Dengan teknologi 3D view 360 di mana memungkinkan
                                     <br class="d-none d-sm-block"/>
                                     untuk mengelilingi Indonesia tanpa harus berpindah tempat.
                                 </p>
@@ -352,22 +334,17 @@
                     </a>
                     <a href="">
                         <div class="d-flex align-items-start mb-5">
-                            <div
-                                class="bg-danger me-sm-4 me-3 p-3"
-                                style="border-radius: 13px"
-                            >
-                                <img
-                                    src="assets/img/steps/water-sport.svg"
-                                    width="22"
-                                    alt="steps"
+                            <div class="bg-danger me-sm-4 me-3 p-3" style="border-radius: 13px">
+                                <img src="assets/img/steps/water-sport.svg"
+                                     width="22"
+                                     alt="steps"
                                 />
                             </div>
                             <div class="flex-1">
                                 <h5 class="text-secondary fw-bold fs-0">
                                     <a href="/brand">Pembelian Produk UMKM</a>
                                 </h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Aperiam at itaque nobis perspiciatis saepe! Architecto,
                                     blanditiis commodi consectetur consequatur consequuntur
                                     distinctio hic inventore labore omnis, quisquam recusandae
@@ -378,22 +355,18 @@
                     </a>
                     <a href="">
                         <div class="d-flex align-items-start mb-5">
-                            <div
-                                class="bg-info me-sm-4 me-3 p-3"
-                                style="border-radius: 13px"
-                            >
-                                <img
-                                    src="assets/img/steps/taxi.svg"
-                                    width="22"
-                                    alt="steps"
+                            <div class="bg-info me-sm-4 me-3 p-3"
+                                 style="border-radius: 13px">
+                                <img src="assets/img/steps/taxi.svg"
+                                     width="22"
+                                     alt="steps"
                                 />
                             </div>
                             <div class="flex-1">
                                 <h5 class="text-secondary fw-bold fs-0">
                                     <a href="#">Digital Learning Kebudayaan Indonesia</a>
                                 </h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Aperiam at itaque nobis perspiciatis saepe! Architecto,
                                     blanditiis commodi consectetur consequatur consequuntur
                                     distinctio hic inventore labore omnis, quisquam recusandae
@@ -408,56 +381,42 @@
         <!-- end of .container-->
     </section>
 
-    <section id="destination">
-        <div class="container">
+    <section id="destination" class="bg-soft-info">
+        <div class="container" data-aos="fade-down">
+            <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
+                <img src="assets/img/category/shape.svg"
+                     style="max-width: 200px"
+                     alt="service"
+                />
+            </div>
+            <div class="mb-7 text-center">
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                    Destination
+                </h3>
+                <h5 class="text-secondary">
+                    Berbagai macam destinasi terbaik yang dapat dikunjungi secara
+                    virtual360 di sini.
+                </h5>
+            </div>
 
-          
-                    <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
-                        <img
-                            src="assets/img/category/shape.svg"
-                            style="max-width: 200px"
-                            alt="service"
-                        />
-                    </div>
-                    <div class="mb-7 text-center">
-                        <h3
-                            class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                        >
-                            Destination
-                        </h3>
-                        <h5 class="text-secondary">
-                            Berbagai macam destinasi terbaik yang dapat dikunjungi secara
-                            virtual360 di sini.
-                        </h5>
-                    </div>
-     
-            <div class="row">             
-
+            <div class="row">
                 @foreach ($categori_provinsi as $item)
-                    
-          
-                <div class="col-lg-2 col-sm-6 mb-6">
-                    <a href="{{ route('category-provinsi-detail', $item->slug) }}">
-                        <div
-                            class="card service-card shadow-hover rounded-3 text-center align-items-center"
-                        >
-                            <div class="card-body p-xxl-5 p-4">
-                                <img
-                                    src="{{ Storage::url($item->photo) }}"
-                                    width="100%"
-                                    alt="Borobudur-Jawa Tengah"
-                                />
-                                <h4 class="mb-3">{{ $item->name }}</h4>
+                    <div class="col-lg-2 col-sm-6 mb-6">
+                        <a href="{{ route('category-provinsi-detail', $item->slug) }}">
+                            <div
+                                class="card service-card shadow-hover rounded-3 text-center align-items-center w-100 h-100">
+                                <div class="card-body p-xxl-5 p-4">
+                                    <img src="{{ Storage::url($item->photo) }}"
+                                         width="125"
+                                         height="125"
+                                         alt="{{ $item->name }}"
+                                    />
+                                    <h4 class="mb-3">{{ $item->name }}</h4>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
                 @endforeach
-
-              
-             
-              
-               
             </div>
         </div>
         <!-- end of .container-->
@@ -577,8 +536,8 @@
         <!-- end of .container-->
     </section> --}}
 
-    <section class="pt-5 pt-md-9" id="prototype">
-        <div class="container">
+    <section id="prototype">
+        <div class="container" data-aos="fade-up">
             <div class="mb-7 text-center">
                 <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                     Prototype
@@ -593,37 +552,32 @@
                 <iframe width="100%"
                         height="720"
                         src="https://www.artsteps.com/embed/62489e716b52fc7b54fa087e/1280/720" frameborder="0"
-                        allowfullscreen
-                >
+                        allowfullscreen>
                 </iframe>
             </div>
         </div>
         <!-- end of .container-->
     </section>
 
-    <section id="testimonial">
-        <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
+    <section id="testimonial" class="bg-soft-success">
+        <div class="position-relative pt-3 pt-lg-2 pb-1 pb-lg-2" data-aos="fade-up">
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="mb-8 text-start">
                             <h5 class="text-secondary">Testimonials</h5>
-                            <h3
-                                class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                            >
-                                Apa yang orang katakan tentang kita.
+                            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                                Apa yang orang katakan tentang SVCC Indonesia.
                             </h3>
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
                     <div class="col-lg-6">
                         <div class="pe-7 ps-5 ps-lg-0">
-                            <div
-                                class="carousel slide carousel-fade position-static"
-                                id="testimonialIndicator"
-                                data-bs-ride="carousel"
-                            >
+                            <div class="carousel slide carousel-fade position-static"
+                                 id="testimonialIndicator"
+                                 data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                     <button
                                         class="active"
@@ -786,16 +740,14 @@
     </section>
 
     <section id="partners">
-        <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
+        <div class="position-relative pt-3 pt-lg-2 pb-1 pb-lg-2" data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
-                    <h3
-                        class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-                    >
+                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                         Our Partners
                     </h3>
                     <h5 class="text-secondary">
-                        Beberapa partner yang ikut bekerja sama.
+                        Beberapa partner yang ikut bekerja sama dengan SVCC Indonesia.
                     </h5>
                 </div>
                 <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
@@ -859,38 +811,29 @@
         </div>
     </section>
 
-    <section class="pt-6">
+    <section id="subscribe" class="pt-6">
         <div class="container">
-            <div
-                class="py-8 px-5 position-relative text-center"
-                style="
+            <div class="py-8 px-5 position-relative text-center"
+                 style="
             background-color: rgba(223, 215, 249, 0.199);
             border-radius: 129px 20px 20px 20px;
-            "
-            >
-                <div
-                    class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"
-                >
-                    <img
-                        src="assets/img/cta/send-mail.png"
-                        style="max-width: 70px"
-                        alt="send icon"
+            ">
+                <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3">
+                    <img src="assets/img/cta/send-mail.png"
+                         style="max-width: 70px"
+                         alt="send icon"
                     />
                 </div>
                 <div class="position-absolute end-0 top-0 z-index--1">
-                    <img
-                        src="assets/img/cta/shape-bg2.png"
-                        width="264"
-                        alt="cta shape"
+                    <img src="assets/img/cta/shape-bg2.png"
+                         width="264"
+                         alt="cta shape"
                     />
                 </div>
-                <div
-                    class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"
-                >
-                    <img
-                        src="assets/img/cta/shape-bg1.png"
-                        style="max-width: 340px"
-                        alt="cta shape"
+                <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block">
+                    <img src="assets/img/cta/shape-bg1.png"
+                         style="max-width: 340px"
+                         alt="cta shape"
                     />
                 </div>
                 <div class="row justify-content-center">

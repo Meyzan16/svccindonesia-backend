@@ -19540,8 +19540,7 @@ iframe {
 /*                                    Badge                                   */
 /* -------------------------------------------------------------------------- */
 .carousel-indicators {
-    right: unset;
-    margin-left: 1.2rem;
+
 }
 
 @media (max-width: 991.98px) {
@@ -19555,7 +19554,7 @@ iframe {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #212832;
+    background-color: #EB913F;
     width: 0.6875rem;
     height: 0.6875rem;
     opacity: 0.3;
@@ -19660,6 +19659,11 @@ iframe {
 
 .card {
     border: none;
+}
+
+.card:hover {
+    color: #EB913F;
+    transform: scale(103%);
 }
 
 .card.service-card:before {
