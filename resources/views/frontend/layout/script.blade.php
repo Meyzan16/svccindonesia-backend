@@ -22,16 +22,10 @@
              translateX: [40,0],
              translateZ: 0,
              opacity: [0,1],
-             easing: "easeOutExpo",
-             duration: 5200,
-             delay: (el, i) => 500 + 30 * i
-           }).add({
-     targets: '.hero-title .letter',
-     translateX: [0,-30],
-     opacity: [1,0],
-     easing: "easeInExpo",
-     duration: 1100,
-     delay: (el, i) => 100 + 30 * i
+             easing: "easeInExpo",
+             duration: 1100,
+             delay: (el, i) => 100 + 30 * i
+           })
    });
  </script>
  <!--    End of JavaScripts-->

@@ -1,7 +1,7 @@
 @extends('frontend.main.app')
 
 @section('title')
-    Indonesian 360 Tour - Home
+    About Indonesia 360 Tour
 @endsection
 
 @push('prepend-style')
@@ -111,8 +111,7 @@
                             class="rounded"
                             style="width: 100%; max-height: 500px"
                             height="500px"
-                            src="https://www.youtube.com/embed/KyvAh4Gtyjk"
-                            src="https://drive.google.com/file/d/14Vpwng5mEL3yELjaVAnFxWii3mNaBTno/preview"
+                            src="https://www.youtube.com/embed/_dlBUHhDOQU"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen="allowfullscreen"
@@ -125,7 +124,7 @@
         <!-- end of .container-->
     </section>
 
-    <section id="our-team" class="bg-light py-4">
+    {{--<section id="our-team" class="bg-light py-4">
         <div class="container pt-3 pt-lg-2 pb-6 pb-lg-8 position-relative" data-aos="fade-up">
 
             <div class="text-center">
@@ -141,7 +140,7 @@
                 <div class="col-lg-12 mt-4 carousel slide carousel-fade position-static"
                      id="ourTeamIndicator"
                      data-bs-ride="carousel">
-                    {{--isi dari section/carousel--}}
+                    --}}{{--isi dari section/carousel--}}{{--
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active">
                             <h1 data-aos="zoom-out" class="text-kuning">Web Developer</h1>
@@ -485,7 +484,7 @@
                             </div>
                         </div>
                     </div>
-                    {{--navigasi titik--}}
+                    --}}{{--navigasi titik--}}{{--
 
                     <div class="carousel-indicators">
                         <button
@@ -525,7 +524,7 @@
             </div>
 
         </div>
-    </section>
+    </section>--}}
 
 @endsection
 

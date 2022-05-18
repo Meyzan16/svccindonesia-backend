@@ -17,7 +17,7 @@
                     <div class="col-12 justify-content-start mb-4">
                         <h1 class="text-uppercase">{{ $product->name }}</h1>
                         <div class="owner">oleh<span class="text-kuning"> {{ $product->user->store_name }}</span></div>
-                        <h4 class="text-kuning mt-2">IDR {{ number_format($product->price) }}</h4>
+                        {{--<h4 class="text-kuning mt-2">IDR {{ number_format($product->price) }}</h4>--}}
                     </div>
                 </div>
 
@@ -57,17 +57,17 @@
                     <div class="col-8">
                         <h1 class="text-uppercase fw-bold"> {{ $product->name }}</h1>
                         <div class="owner">oleh<span class="text-kuning"> {{ $product->user->store_name }}</span></div>
-                        <p class="price">IDR {{ number_format($product->price) }}</p>
-                        <p class="">stock <span class="text-kuning">10</span></p>
+                        {{--<p class="price">IDR {{ number_format($product->price) }}</p>--}}
+                        {{--<p class="">stock <span class="text-kuning">10</span></p>--}}
                     </div>
                     <div class="col-4 justify-content-center d-flex">
                         {{-- @auth --}}
-                        <form action="#" method="POST" enctype="multipart/form-data">
+                        {{--<form action="#" method="POST" enctype="multipart/form-data">
                             @csrf
                             <button type="submit" class="btn btn-success rounded-1 px-4 text-white btn-block mb-3">
                                 Masukkan <br> Keranjang
                             </button>
-                        </form>
+                        </form>--}}
                         {{-- @else
                         <a
                             href="#" class="btn btn-success px-4 text-white btn-block mb-3">
@@ -80,13 +80,13 @@
             </div>
             <!-- deskripsi -->
             <div class="store-description">
-                <h5 class="mt-4 fw-bold">Deskripsi Produk</h5>
+                <h5 class="mt-4 fw-bold">Deskripsi</h5>
                 <p>{!! $product->description !!}</p>
             </div>
 
         </div>
 
-        <section id="customer-review">
+        <{{--section id="customer-review">
             <div class="store-review">
                 <div class="container">
                     <div class="row">
@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
     </div>
 @endsection

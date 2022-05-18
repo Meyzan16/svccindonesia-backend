@@ -31,7 +31,7 @@ Route::get('/about-us', function () {
             Route::get('/{slug}', [CategoryBrandController::Class, 'show'])->name('category-brand-detail');
         });
 
-        Route::group(['prefix'  => 'provinsi/'],function(){
+        Route::group(['prefix'  => 'destinasi/'],function(){
             Route::get('/', [CategoryProvinsiController::Class, 'index'])->name('category-provinsi');
             Route::get('/{slug}', [CategoryProvinsiController::Class, 'show'])->name('category-provinsi-detail');
         });
@@ -40,7 +40,7 @@ Route::get('/about-us', function () {
 
         //fungsi prefix untuk memanggil satu kesatuan // ADMIN
         Route::prefix('admin')->namespace('')->group(function(){
-            Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin'); 
+            Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin');
             Route::resource('category', CategoryAdminController::class);
             Route::resource('product', ProductAdminController::class);
             Route::resource('product-gallery', ProductGalleryAdminController::class);

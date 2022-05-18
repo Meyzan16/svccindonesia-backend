@@ -60,17 +60,17 @@
               class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="/#partners"
-              >Our Partners
+              >Partners
             </a>
           </li>
-          <li class="nav-item px-0 px-xl-3">
+          {{--<li class="nav-item px-0 px-xl-3">
             <a
               class="nav-link text-kuning fw-medium"
               aria-current="page"
               href="login.html">
                 <span class="fas fa-sign-in"></span> Login
             </a>
-          </li>
+          </li>--}}
         </ul>
       </div>
     </div>
