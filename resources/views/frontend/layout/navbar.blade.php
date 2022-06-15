@@ -32,7 +32,7 @@
           </a>
         </li>
         <li class="nav-item px-0 px-xl-3">
-          <a class="nav-link text-white btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#aboutus ">Lets Travel
+          <a class="nav-link text-white btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="https://indonesiantour.github.io/virtualtour/">Lets Travel
           </a>
         </li>
       </ul>
