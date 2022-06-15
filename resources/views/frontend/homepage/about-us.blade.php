@@ -32,9 +32,8 @@ About Indonesia 360 Tour
             <p>
                 Indonesian 360 Tour akan hadir memudahkan pengunjung untuk
                 mengakses spot destinasi unggulan Indonesia yang dilengkapi
-                dengan fasilitas digital learning dan mysooltan sebagai
-                marketplace sehingga mempermudah wisatawan dalam membeli
-                produk UMKM
+                dengan fasilitas digital learning dan mempermudah wisatawan dalam membeli
+                produk UMKM.
             </p>
         </div>
     </div>

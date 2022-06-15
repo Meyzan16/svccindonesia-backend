@@ -36,10 +36,13 @@ Indonesia 360 Tour | Home
                                      width="15"
                                      alt="paly"/>
                             </span>
-                        </a> -->
+                        </a> 
+
+                   <span class="fw-medium text-white">Play Video</span> -->
+
                     <a class="btn btn-merah btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#aboutus ">Daftar UMKM
                     </a>
-                    <!-- <span class="fw-medium text-white">Play Video</span> -->
+
                     <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
@@ -75,8 +78,7 @@ Indonesia 360 Tour | Home
                             <br class="d-none d-sm-block" />
                             Indonesian 360 Tour akan hadir memudahkan pengunjung untuk
                             mengakses spot destinasi unggulan Indonesia yang dilengkapi
-                            dengan fasilitas digital learning dan mysooltan sebagai
-                            marketplace sehingga mempermudah wisatawan dalam membeli
+                            dengan fasilitas digital learning dan mempermudah wisatawan dalam membeli
                             produk UMKM. <a href="/about-us" class="text-biru">Selengkapnya</a>
                         </p>
                     </div>
