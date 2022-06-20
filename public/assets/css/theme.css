@@ -6359,7 +6359,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #FFFEFE;
+    background-color: rgba(176, 176, 176, 0.94);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 2.25rem;
@@ -6370,7 +6370,7 @@ fieldset:disabled .btn {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1040;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     background-color: #000;
@@ -19571,6 +19571,10 @@ iframe {
 
 .carousel-inner {
     overflow: unset;
+}
+
+.text-animated{
+
 }
 
 .hero-title {

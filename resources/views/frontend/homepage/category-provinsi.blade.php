@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12" data-aos="fade-up">
-                        <h2>Jelajah tempat bersejarah</h2>
+                        <h2>Belajar Tempat Bersejarah</h2>
                     </div>
                 </div>
 
@@ -111,7 +111,7 @@
                         </div>
                     @empty
                         <div class="col-12 text-center py-5" data-aos="fade-up" data-aos-delay="100">
-                            No Product Found
+                            No items found.
                         </div>
                     @endforelse
 

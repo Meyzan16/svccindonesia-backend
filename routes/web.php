@@ -20,28 +20,31 @@ use App\Http\Controllers\Admin\ProductGalleryAdminController;
 |
 */
 
-Route::get('/', [HomeController::Class, 'index'])->name('homepage');
-
-Route::get('/about-us', function () {
-    return view('frontend.homepage.about-us');
+Route::group(['prefix' => '/'], function () {
+    Route::get('/', [HomeController::Class, 'index'])->name('homepage');
+    Route::get('/about-us', [HomeController::Class, 'aboutUs'])->name('about-us-page');
+    //testroute
+    Route::get('/login', function () {
+        return view('frontend.homepage.about-us');
+    });
 });
 
-        Route::group(['prefix'  => 'brand/'],function(){
-            Route::get('/', [CategoryBrandController::Class, 'index'])->name('category-brand');
-            Route::get('/{slug}', [CategoryBrandController::Class, 'show'])->name('category-brand-detail');
-        });
+Route::group(['prefix' => 'brand/'], function () {
+    Route::get('/', [CategoryBrandController::Class, 'index'])->name('category-brand');
+    Route::get('/{slug}', [CategoryBrandController::Class, 'show'])->name('category-brand-detail');
+});
 
-        Route::group(['prefix'  => 'destinasi/'],function(){
-            Route::get('/', [CategoryProvinsiController::Class, 'index'])->name('category-provinsi');
-            Route::get('/{slug}', [CategoryProvinsiController::Class, 'show'])->name('category-provinsi-detail');
-        });
+Route::group(['prefix' => 'destinasi/'], function () {
+    Route::get('/', [CategoryProvinsiController::Class, 'index'])->name('category-provinsi');
+    Route::get('/{slug}', [CategoryProvinsiController::Class, 'show'])->name('category-provinsi-detail');
+});
 
-        Route::get('/detail/{slug}', [DetailController::Class, 'index'] )->name('detail');
+Route::get('/detail/{slug}', [DetailController::Class, 'index'])->name('detail');
 
-        //fungsi prefix untuk memanggil satu kesatuan // ADMIN
-        Route::prefix('admin')->namespace('')->group(function(){
-            Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin');
-            Route::resource('category', CategoryAdminController::class);
-            Route::resource('product', ProductAdminController::class);
-            Route::resource('product-gallery', ProductGalleryAdminController::class);
-        });
+//fungsi prefix untuk memanggil satu kesatuan // ADMIN
+Route::prefix('admin')->namespace('')->group(function () {
+    Route::get('/', [DashboardAdminController::Class, 'index'])->name('dashboard-admin');
+    Route::resource('category', CategoryAdminController::class);
+    Route::resource('product', ProductAdminController::class);
+    Route::resource('product-gallery', ProductGalleryAdminController::class);
+});

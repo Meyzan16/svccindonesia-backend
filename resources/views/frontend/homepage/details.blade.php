@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-12 justify-content-start mb-4">
                         <h1 class="text-uppercase">{{ $product->name }}</h1>
-                        <div class="owner">oleh<span class="text-kuning"> {{ $product->user->store_name }}</span></div>
+                        <div class="owner">Terletak di <span class="text-kuning"> {{ $product->user->store_name }}</span></div>
                         {{--<h4 class="text-kuning mt-2">IDR {{ number_format($product->price) }}</h4>--}}
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-8">
                         <h1 class="text-uppercase fw-bold"> {{ $product->name }}</h1>
-                        <div class="owner">oleh<span class="text-kuning"> {{ $product->user->store_name }}</span></div>
+                        <div class="owner">Terletak di <span class="text-kuning"> {{ $product->user->store_name }}</span></div>
                         {{--<p class="price">IDR {{ number_format($product->price) }}</p>--}}
                         {{--<p class="">stock <span class="text-kuning">10</span></p>--}}
                     </div>

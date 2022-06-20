@@ -119,7 +119,7 @@ About Indonesia 360 Tour
                 <div class="col-lg-12 mt-4 carousel slide carousel-fade position-static"
                      id="ourTeamIndicator"
                      data-bs-ride="carousel">
-                    --}}{{--isi dari section/carousel--}}{{--
+                    isi dari section/carousel
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active">
                             <h1 data-aos="zoom-out" class="text-kuning">Web Developer</h1>
@@ -463,7 +463,7 @@ About Indonesia 360 Tour
                             </div>
                         </div>
                     </div>
-                    --}}{{--navigasi titik--}}{{--
+                    navigasi titik
 
                     <div class="carousel-indicators">
                         <button
