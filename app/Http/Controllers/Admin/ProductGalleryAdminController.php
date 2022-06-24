@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Models\Products_galleries;
+use App\Models\Products;
+use Illuminate\Support\Facades\Validator;
 
 class ProductGalleryAdminController extends Controller
 {
@@ -24,7 +26,8 @@ class ProductGalleryAdminController extends Controller
  
     public function create()
     {
-        //
+        $products = Products::all();
+        return view('backend.admin.product_gallery.create', compact('products'));
     }
 
     /**
@@ -35,7 +38,32 @@ class ProductGalleryAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $rules = [
+            'products_id' => 'required',
+            'photos' => 'required|max:2048'
+        ];
+
+        $message = [
+            'products_id.required' => 'Nama produk tidak boleh kosong',
+            'photos.required' => 'Poto produk tidak boleh kosong',
+            'photos.max' => 'Ukuran poto maksimal 2 MB'
+        ];
+
+        $validator = Validator::make($data, $rules, $message);
+
+        if($validator->fails())
+        {
+            return redirect()->back()->withErrors($validator)->withInput($data);
+        }
+
+        $data['photos'] = $request->file('photos')->store('assets/product', 'public');
+        $data['products_id'] = $request->products_id;
+        Products_galleries::create($data);
+
+        return redirect()->route('product-gallery.index')->with('success', 'data berhasil ditambahkan');
+        
+
     }
 
     /**

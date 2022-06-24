@@ -11,6 +11,19 @@
         <h2 class="dashboard-title">Product Gallery</h2>
         <p class="dashboard-subtitle"> List of Product Gallery </p>
       </div>
+
+      <div class="row">
+          <div class="div col-md-12">
+              @if(session()->has('success'))
+                <div class="autohide">
+                    <div class="alert alert-success autohide" role="alert">
+                    {{ session('success') }}
+                    </div>    
+                </div>
+             @endif
+          </div>
+      </div>
+
       <div class="dashboard-content">
           <div class="row">
               <div class="col-md-12">
