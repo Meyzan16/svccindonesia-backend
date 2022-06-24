@@ -8,6 +8,7 @@ use App\Http\Controllers\CategoryProvinsiController;
 use App\Http\Controllers\Admin\CategoryAdminController;
 use App\Http\Controllers\Admin\ProductAdminController;
 use App\Http\Controllers\Admin\ProductGalleryAdminController;
+use App\Http\Controllers\Admin\DashboardAdminController;
 
 /*
 |--------------------------------------------------------------------------
