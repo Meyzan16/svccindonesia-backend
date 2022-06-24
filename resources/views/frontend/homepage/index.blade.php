@@ -22,7 +22,8 @@
                 </div>
                 <div class="col-7 colorder-0 text-md-start text-center py-6">
                     <h4 class="fw-bold text-warning mb-3">Truly Indonesia</h4>
-                    <h1 class="hero-title">Indonesia <span class="hero-animated" onload="animateHeroTitle()">360&deg;</span> Tour</h1>
+                    <h1 class="hero-title">Indonesia <span class="hero-animated"
+                                                           onload="animateHeroTitle()">360&deg;</span> Tour</h1>
                     <p class="mb-4 fw-medium text-kuning">
                         Nikmati pengalaman baru nan seru</span><br class="d-none d-xl-block"/>
                         dalam menjelajahi Indonesia.
@@ -56,7 +57,8 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id=""></h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
                                             <span aria-hidden="true" class=""></span>
                                         </button>
                                     </div>
@@ -89,7 +91,7 @@
                 <div class="col-lg-6">
                     <div class="mb-4 text-start">
                         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                            About Us
+                            Tentang <span class="text-kuning">Id 360 Tour</span>
                         </h3>
                     </div>
 
