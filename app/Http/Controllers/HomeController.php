@@ -15,6 +15,11 @@ class HomeController extends Controller
 
         return view('frontend.homepage.index', [
             'categori_provinsi' => $categori_provinsi
-        ]); 
+        ]);
     }
+
+    public function aboutUs(){
+        return view('frontend.homepage.about-us');
+    }
+
 }

@@ -13,15 +13,15 @@
 <hr>
 
 ## How to Deploy This Repository
-
-- Clone this repository to your local | <span style="color: #14859B">$git clone https://github.com/Meyzan16/svccindonesia-backend.git </span>
-- Copy & paste <span style="color: #EB913F">.env.example</span> then rename to <span style="color: #EB913F">.env</span>
-- Change DB environment such as name and password 
-- Run in terminal and wait until finish <span style="color: #14859B">$composer install</span> or <span style="color:#14859B">$composer update</span>
-- Run in terminal and wait until finish <span style="color: #14859B">$npm i</span>
-- Run in terminal and wait until finish <span style="color: #14859B">$php artian key:generate</span>
-- Run in terminal and wait until finish <span style="color: #14859B">$php artian migrate</span>
-- Run in terminal and wait until finish <span style="color: #14859B">$php artian serve</span>
+1. Install requirements: Xampp, Composer, Node.js, PHP version 8^ 
+2. Clone this repository to your local | <span style="color: #14859B">$git clone https://github.com/Meyzan16/svccindonesia-backend.git </span>
+3. Copy & paste <span style="color: #EB913F">.env.example</span> then rename to <span style="color: #EB913F">.env</span>
+4. Change DB environment such as name and password 
+5. Run in terminal and wait until finish <span style="color: #14859B">$composer install</span> or <span style="color:#14859B">$composer update</span>
+6. Run in terminal and wait until finish <span style="color: #14859B">$npm i</span>
+7. Run in terminal and wait until finish <span style="color: #14859B">$php artian key:generate</span>
+8. Run in terminal and wait until finish <span style="color: #14859B">$php artian migrate</span>
+9. Run in terminal and wait until finish <span style="color: #14859B">$php artian serve</span>
 
 <hr>
 <hr>

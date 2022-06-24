@@ -1,131 +1,109 @@
 @extends('frontend.main.app')
 
 @section('title')
-    Indonesian 360 Tour - Home
+About Indonesia 360 Tour
 @endsection
 
 @push('prepend-style')
-    <link href="/style/main.css" rel="stylesheet"/>
+<link href="/style/main.css" rel="stylesheet" />
 @endpush
 
 @section('content')
 
-    <section id="aboutus" class="pb-4" style="padding-top: 7rem">
-        <hr>
-        <!--/.bg-holder-->
-        <div class="bg-white"></div>
-        <!--close of /.bg-holder-->
-        <div class="container mt-6 align-items-center text-start"
-             data-aos="zoom-in">
-            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                About Us
-            </h3>
-            <div class=" align-items-start mb-5">
-                <h5 class="text-secondary fw-bold fs-0"></h5>
-                <p>
-                    Indonesian 360 Tour adalah platform penyedia jasa tampilan
-                    visual di bidang wisata dan culture Indonesia yang disajikan
-                    dalam 360 derajat untuk memberikan experience baru dalam
-                    menikmati indahnya Indonesia dan membantu pelaku UMKM hanya
-                    pada satu layar saja.
-                    <br class="d-none d-sm-block"/>
-                </p>
-                <p>
-                    Indonesian 360 Tour akan hadir memudahkan pengunjung untuk
-                    mengakses spot destinasi unggulan Indonesia yang dilengkapi
-                    dengan fasilitas digital learning dan mysooltan sebagai
-                    marketplace sehingga mempermudah wisatawan dalam membeli
-                    produk UMKM dengan cara pengunjung dapat mengakses link
-                    produk pada display platform.
-                </p>
-            </div>
+<section id="aboutus" class="pb-4" style="padding-top: 7rem">
+    <hr>
+    <!--/.bg-holder-->
+    <div class="bg-white"></div>
+    <!--close of /.bg-holder-->
+    <div class="container mt-6 align-items-center text-start" data-aos="zoom-in">
+        <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+            About Us
+        </h3>
+        <div class=" align-items-start mb-5">
+            <h5 class="text-secondary fw-bold fs-0"></h5>
+            <p>
+                Indonesian 360 Tour adalah platform penyedia jasa tampilan
+                visual di bidang wisata dan culture Indonesia yang disajikan
+                dalam 360 derajat untuk memberikan experience baru dalam
+                menikmati indahnya Indonesia dan membantu pelaku UMKM hanya
+                pada satu layar saja.
+                <br class="d-none d-sm-block" />
+            </p>
+            <p>
+                Indonesian 360 Tour akan hadir memudahkan pengunjung untuk
+                mengakses spot destinasi unggulan Indonesia yang dilengkapi
+                dengan fasilitas digital learning dan mempermudah wisatawan dalam membeli
+                produk UMKM.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="logo" class="py-4">
-        <div class="container position-relative pb-1 pb-lg-1">
-            <div class="row align-items-center">
+<section id="logo" class="py-4">
+    <div class="container position-relative pb-1 pb-lg-1">
+        <div class="row align-items-center">
 
-                <div class="col-lg-6 d-flex justify-content-center align-items-start mb-sm-5">
-                    <div class="card position-relative shadow"
-                         style="max-width: 370px"
-                         data-aos="zoom-in">
-                        <div class="position-absolute z-index--1 me-10 me-xxl-0" style="right: -160px; top: -210px">
-                            <img
-                                src="assets/img/steps/bg.png"
-                                style="max-width: 550px"
-                                alt="shape"
-                            />
-                        </div>
-                        <div class="card-body p-3 mb-4">
-                            <img
-                                class="mb-4 mt-2 rounded-2 w-100"
-                                src="images/logo.jpeg"
-                                alt="booking"
-                            />
-                            <h5 class="fw-medium justify-content-center d-flex">Indonesian 360 Tour Logo</h5>
-                            <h6 class="fw-medium justify-content-center d-flex">by SVCC 2</h6>
-                        </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-start mb-sm-5">
+                <div class="card position-relative shadow" style="max-width: 370px" data-aos="zoom-in">
+                    <div class="position-absolute z-index--1 me-10 me-xxl-0" style="right: -160px; top: -210px">
+                        <img src="assets/img/steps/bg.png" style="max-width: 550px" alt="shape" />
+                    </div>
+                    <div class="card-body p-3 mb-4">
+                        <img class="mb-4 mt-2 rounded-2 w-100" src="images/logo.jpeg" alt="booking" />
+                        <h5 class="fw-medium justify-content-center d-flex">Indonesian 360 Tour Logo</h5>
+                        <h6 class="fw-medium justify-content-center d-flex">by SVCC 2</h6>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="mt-4 mb-4 text-start">
-                        <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                            Our Logo
-                        </h3>
-                        <h5 class="text-secondary">Filosofi logo Indonesian 360 Tour</h5>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-8">
-                        <div class="flex-1">
-                            <h5 class="text-secondary fw-bold fs-0"></h5>
-                            <p>
-                                Peta Indonesia yang dikelilingi oleh lingkaran 360⁰ dengan lambang jaringan memiliki
-                                makna suatu
-                                koneksi yang menyatukan seluruh wilayah Indonesia menjadi satu visual teknologi.
-                                <br class="d-none d-sm-block"/>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-        <!-- end of .container-->
-    </section>
 
-    <section id="video" class="py-4">
-        <div class="container" data-aos="zoom-in">
-            <div class="align-items-center">
-                <div class="mb-4 text-center">
+            <div class="col-lg-6">
+                <div class="mt-4 mb-4 text-start">
                     <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                        Video
+                        Our Logo
                     </h3>
-                    <h5 class="text-secondary">Simak video tentang Indonesian 360 Tour berikut.</h5>
+                    <h5 class="text-secondary">Filosofi logo Indonesian 360 Tour</h5>
                 </div>
 
-                <div class="d-flex align-items-start mb-5">
-                    <div class="container flex-1">
-                        <iframe
-                            class="rounded"
-                            style="width: 100%; max-height: 500px"
-                            height="500px"
-                            src="https://www.youtube.com/embed/KyvAh4Gtyjk"
-                            src="https://drive.google.com/file/d/14Vpwng5mEL3yELjaVAnFxWii3mNaBTno/preview"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen="allowfullscreen"
-                        ></iframe>
+                <div class="d-flex align-items-start mb-8">
+                    <div class="flex-1">
+                        <h5 class="text-secondary fw-bold fs-0"></h5>
+                        <p>
+                            Peta Indonesia yang dikelilingi oleh lingkaran 360⁰ dengan lambang jaringan memiliki
+                            makna suatu
+                            koneksi yang menyatukan seluruh wilayah Indonesia menjadi satu visual teknologi.
+                            <br class="d-none d-sm-block" />
+                        </p>
                     </div>
                 </div>
-
             </div>
-        </div>
-        <!-- end of .container-->
-    </section>
 
-    <section id="our-team" class="bg-light py-4">
+        </div>
+    </div>
+    <!-- end of .container-->
+</section>
+
+<section id="video" class="py-4">
+    <div class="container" data-aos="zoom-in">
+        <div class="align-items-center">
+            <div class="mb-4 text-center">
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                    Video
+                </h3>
+                <h5 class="text-secondary">Simak video tentang Indonesian 360 Tour berikut.</h5>
+            </div>
+
+            <div class="d-flex align-items-start mb-5">
+                <div class="container flex-1">
+                    <iframe class="rounded" style="width: 100%; max-height: 500px" height="500px" src="https://www.youtube.com/embed/_dlBUHhDOQU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of .container-->
+</section>
+
+{{--<section id="our-team" class="bg-light py-4">
         <div class="container pt-3 pt-lg-2 pb-6 pb-lg-8 position-relative" data-aos="fade-up">
 
             <div class="text-center">
@@ -141,7 +119,7 @@
                 <div class="col-lg-12 mt-4 carousel slide carousel-fade position-static"
                      id="ourTeamIndicator"
                      data-bs-ride="carousel">
-                    {{--isi dari section/carousel--}}
+                    isi dari section/carousel
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active">
                             <h1 data-aos="zoom-out" class="text-kuning">Web Developer</h1>
@@ -485,7 +463,7 @@
                             </div>
                         </div>
                     </div>
-                    {{--navigasi titik--}}
+                    navigasi titik
 
                     <div class="carousel-indicators">
                         <button
@@ -525,10 +503,10 @@
             </div>
 
         </div>
-    </section>
+    </section>--}}
 
 @endsection
 
 @push('addon-script')
-    <script src="/vendor/vue/vue.js"></script>
+<script src="/vendor/vue/vue.js"></script>
 @endpush

@@ -1,73 +1,82 @@
 @extends('frontend.main.app')
 
 @section('title')
-    Indonesian 360 Tour - Home
+    Indonesia 360 Tour | Home
 @endsection
 
 @section('content')
     <section style="padding-top: 6.5rem">
         <!--/.bg-holder-->
         <div class="bg-holder"
-             style="background-image: url(/images/background.jpg)">
+             style="background-image: url(images/background/with_art/ungu_gelap.png)">
         </div>
         <!--close of /.bg-holder-->
         <div class="container mt-6" data-aos="fade-up">
             <div class="row align-items-center">
-                <div class="col-md-5 col-lg-6 order-1 order-md-1 text-end">
+                <div class="col-5 order-1 order-md-1 text-end">
                     <img
-                        class="pt-7 pt-md-0 hero-img"
+                        class="pt-0 pt-md-0 pt-lg-0 hero-img"
                         src="https://holosbase.com/img/slide2/VR.png"
                         alt="hero-header-VR-boy"
                     />
                 </div>
-                <div class="col-md-7 col-lg-6 order-0 text-md-start text-center py-6">
+                <div class="col-7 colorder-0 text-md-start text-center py-6">
                     <h4 class="fw-bold text-warning mb-3">Truly Indonesia</h4>
-                    <h1 class="hero-title">Indonesian 360 Tour</h1>
+                    <h1 class="hero-title">Indonesia <span class="hero-animated" onload="animateHeroTitle()">360&deg;</span> Tour</h1>
                     <p class="mb-4 fw-medium text-kuning">
-                        Nikmati pengalaman baru nan seru<br class="d-none d-xl-block"/>
+                        Nikmati pengalaman baru nan seru</span><br class="d-none d-xl-block"/>
                         dalam menjelajahi Indonesia.
                         <br class="d-none d-xl-block"/>
                     </p>
                     <div class="text-center text-md-start">
-                        <a
-                            class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
-                            href="#aboutus "
-                        >Cari tahu yuk!</a
-                        >
+                        <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+                           href="#aboutus ">
+                            Cari tahu yuk!
+                        </a>
+
                         <div class="w-100 d-block d-md-none"></div>
-                        <a
-                            href="#!"
-                            role="button"
-                            data-bs-toggle="modal"
-                            data-bs-target="#popupVideo"><span
-                                class="btn btn-merah round-btn-lg rounded-circle me-3 danger-btn-shadow">
-                    <img
-                        src="assets/img/hero/play.svg"
-                        width="15"
-                        alt="paly"/></span></a
-                        ><span class="fw-medium text-white">Play Video</span>
-                        <div
-                            class="modal fade"
-                            id="popupVideo"
-                            tabindex="-1"
-                            aria-labelledby="popupVideo"
-                            aria-hidden="true"
-                        >
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
+
+                        {{--modal--}}
+                        <a type="button"
+                           class="fw-medium text-white"
+                           data-bs-toggle="modal"
+                           data-bs-target="#popupVideo">
+                            <span class="btn btn-merah round-btn-lg rounded-circle me-3 danger-btn-shadow">
+                                <img src="assets/img/hero/play.svg" width="15" alt="Play Video"/>
+                            </span> Play Video
+                        </a>
+
+                        <div class="modal fade"
+                             id="popupVideo"
+                             tabindex="-1"
+                             role="dialog"
+                             aria-labelledby="popupVideo"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
-                                    <iframe
-                                        class="rounded"
-                                        style="width: 100%; max-height: 500px"
-                                        height="500px"
-                                        src="https://www.youtube.com/embed/KyvAh4Gtyjk"
-                                        src="https://drive.google.com/file/d/14Vpwng5mEL3yELjaVAnFxWii3mNaBTno/preview"
-                                        title="YouTube video player"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen="allowfullscreen"
-                                    ></iframe>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id=""></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class=""></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body bg-transparent">
+                                        <iframe
+                                            class="rounded"
+                                            style=""
+                                            width="100%"
+                                            height="300 px"
+                                            src="https://drive.google.com/file/d/14Vpwng5mEL3yELjaVAnFxWii3mNaBTno/preview"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="allowfullscreen">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        {{--end modal--}}
                     </div>
                 </div>
             </div>
@@ -87,13 +96,13 @@
                     <div class="d-flex align-items-start mb-5">
                         <div class="flex-1">
                             <h5 class="text-secondary fw-bold fs-0"></h5>
-                            <p>Indonesian 360 Tour adalah platform penyedia jasa tampilan
+                            <p>Indonesia 360 Tour adalah platform penyedia jasa tampilan
                                 visual di bidang wisata dan culture Indonesia yang disajikan
                                 dalam 360 derajat untuk memberikan experience baru dalam
                                 menikmati indahnya Indonesia dan membantu pelaku UMKM hanya
                                 pada satu layar saja.
                                 <br class="d-none d-sm-block"/>
-                                Indonesian 360 Tour akan hadir memudahkan pengunjung untuk
+                                Indonesia 360 Tour akan hadir memudahkan pengunjung untuk
                                 mengakses spot destinasi unggulan Indonesia yang dilengkapi
                                 dengan fasilitas digital learning dan mysooltan sebagai
                                 marketplace sehingga mempermudah wisatawan dalam membeli
@@ -123,39 +132,36 @@
                         <div class="card-body p-3">
                             <img
                                 class="mb-4 mt-2 rounded-2 w-100"
-                                src="images/papua/2.jpg"
-                                alt="booking"
+                                src="images/jakarta/wisata-kota-tua.png"
+                                alt="wisata"
                             />
                             <div>
-                                <h5 class="fw-medium">Trip Raja empat</h5>
-                                <p class="fs--1 mb-3 fw-medium">
-                                    14-29 June | by Robbin joseph
-                                </p>
+                                <h5 class="fw-medium">Kota Tua, Jakarta</h5>
+                                <p class="fs--1 mb-3 fw-medium">foto oleh <span class="text-ungu">99.co</span></p>
                                 <div class="icon-group mb-4">
-                    <span class="btn icon-item">
-                        <img
-                            src="assets/img/steps/leaf.svg"
-                            alt=""/></span
-                    ><span class="btn icon-item">
-                        <img
-                            src="assets/img/steps/map.svg"
-                            alt=""/></span
-                                    ><span class="btn icon-item">
-                        <img src="assets/img/steps/send.svg" alt=""
-                        /></span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/leaf.svg"
+                                             alt=""/>
+                                    </span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/map.svg"
+                                             alt=""/>
+                                    </span>
+                                    <span class="btn icon-item">
+                                        <img src="assets/img/steps/send.svg"
+                                             alt=""/>
+                                    </span>
                                 </div>
-                                <div
-                                    class="d-flex align-items-center justify-content-between"
-                                >
+                                <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center mt-n1">
                                         <img
                                             class="me-3"
                                             src="assets/img/steps/building.svg"
                                             width="18"
                                             alt="building"
-                                        /><span class="fs--1 fw-medium">24 people going</span>
+                                        /><span class="fs--1 fw-medium">99 orang pernah kesini</span>
                                     </div>
-                                    <div class="show-onhover position-relative">
+                                    {{--<div class="show-onhover position-relative">
                                         <div
                                             class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
                                             style="width: 260px; border-radius: 18px"
@@ -171,21 +177,8 @@
                                                         />
                                                     </div>
                                                     <div>
-                                                        <p class="fs--1 mb-1 fw-medium">Ongoing</p>
-                                                        <h5 class="fw-medium mb-3">Trip to rome</h5>
-                                                        <h6 class="fs--1 fw-medium mb-2">
-                                                            <span>40%</span> completed
-                                                        </h6>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div
-                                                                class="progress-bar"
-                                                                role="progressbar"
-                                                                style="width: 40%"
-                                                                aria-valuenow="25"
-                                                                aria-valuemin="0"
-                                                                aria-valuemax="100"
-                                                            ></div>
-                                                        </div>
+                                                        <p class="fs--1 mb-1 fw-medium">Sedang berlangsung</p>
+                                                        <h5 class="fw-medium mb-3">Wisata Kota Tua</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -197,7 +190,7 @@
                                                 alt="step"
                                             />
                                         </button>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -224,27 +217,25 @@
                         </div>
                         <div class="card-body p-3">
                             <img class="mb-4 mt-2 rounded-2 w-100"
-                                 src="images/papua/2.jpg"
+                                 src="images/jakarta/bundaran-hi.jpg"
                                  alt="booking"
                             />
-                            <div class="">
-                                <h5 class="fw-medium">Trip Raja empat</h5>
-                                <p class="fs--1 mb-3 fw-medium">14-29 June | by Robbin joseph</p>
+                            <div>
+                                <h5 class="fw-medium">Bundaran HI, Jakarta</h5>
+                                <p class="fs--1 mb-3 fw-medium">foto oleh <span
+                                        class="text-ungu">free4kwallpapers</span></p>
                                 <div class="icon-group mb-4">
                                     <span class="btn icon-item">
                                         <img src="assets/img/steps/leaf.svg"
-                                             alt=""
-                                        />
+                                             alt=""/>
                                     </span>
                                     <span class="btn icon-item">
                                         <img src="assets/img/steps/map.svg"
-                                             alt=""
-                                        />
+                                             alt=""/>
                                     </span>
                                     <span class="btn icon-item">
                                         <img src="assets/img/steps/send.svg"
-                                             alt="send"
-                                        />
+                                             alt=""/>
                                     </span>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
@@ -254,48 +245,38 @@
                                             src="assets/img/steps/building.svg"
                                             width="18"
                                             alt="building"
-                                        />
-                                        <span class="fs--1 fw-medium">24 people going</span>
+                                        /><span class="fs--1 fw-medium">99 orang pernah kesini</span>
                                     </div>
-                                    <div class="show-onhover position-relative">
+                                    {{--<div class="show-onhover position-relative">
                                         <div
                                             class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
-                                            style="width: 260px; border-radius: 18px">
+                                            style="width: 260px; border-radius: 18px"
+                                        >
                                             <div class="card-body py-3">
                                                 <div class="d-flex">
                                                     <div style="margin-right: 10px">
-                                                        <img class="rounded-circle"
-                                                             src="assets/img/steps/favorite-placeholder.png"
-                                                             width="50"
-                                                             alt="favorite"
+                                                        <img
+                                                            class="rounded-circle"
+                                                            src="assets/img/steps/favorite-placeholder.png"
+                                                            width="50"
+                                                            alt="favorite"
                                                         />
                                                     </div>
-                                                    <div class="">
-                                                        <p class="fs--1 mb-1 fw-medium">Ongoing</p>
-                                                        <h5 class="fw-medium mb-3">Trip to rome</h5>
-                                                        <h6 class="fs--1 fw-medium mb-2">
-                                                            <span>40%</span> completed
-                                                        </h6>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar"
-                                                                 role="progressbar"
-                                                                 style="width: 40%"
-                                                                 aria-valuenow="25"
-                                                                 aria-valuemin="0"
-                                                                 aria-valuemax="100">
-                                                            </div>
-                                                        </div>
+                                                    <div>
+                                                        <p class="fs--1 mb-1 fw-medium">Sedang berlangsung</p>
+                                                        <h5 class="fw-medium mb-3">Wisata Bundaran HI</h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <button class="btn">
-                                            <img src="assets/img/steps/heart.svg"
-                                                 width="20"
-                                                 alt="step"
+                                            <img
+                                                src="assets/img/steps/heart.svg"
+                                                width="20"
+                                                alt="step"
                                             />
                                         </button>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -304,10 +285,10 @@
                 <div class="col-lg-6">
                     <div class="mb-4 text-start">
                         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                            Our Services
+                            Apa yang bisa dilakukan di <span class="text-kuning">Id 360 Tour</span>?
                         </h3>
                         <h5 class="text-secondary">
-                            Tidak hanya berwisata secara virtual360,<br/>
+                            Indonesia 360 <br/>
                             pengunjung dapat merasakan berbagai pengalaman menarik lainnya
                             dengan berbagai macam layanan yang tersedia.
                         </h5>
@@ -342,13 +323,9 @@
                             </div>
                             <div class="flex-1">
                                 <h5 class="text-secondary fw-bold fs-0">
-                                    <a href="/brand">Pembelian Produk UMKM</a>
+                                    <a href="/brand">Marketplace</a>
                                 </h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam at itaque nobis perspiciatis saepe! Architecto,
-                                    blanditiis commodi consectetur consequatur consequuntur
-                                    distinctio hic inventore labore omnis, quisquam recusandae
-                                    soluta vitae voluptas?
+                                <p>Marketplace yang menyediakan berbagai produk UMKM dari daerah destinasi pilihan.
                                 </p>
                             </div>
                         </div>
@@ -364,13 +341,11 @@
                             </div>
                             <div class="flex-1">
                                 <h5 class="text-secondary fw-bold fs-0">
-                                    <a href="#">Digital Learning Kebudayaan Indonesia</a>
+                                    <a href="#">Digital Learning</a>
                                 </h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam at itaque nobis perspiciatis saepe! Architecto,
-                                    blanditiis commodi consectetur consequatur consequuntur
-                                    distinctio hic inventore labore omnis, quisquam recusandae
-                                    soluta vitae voluptas?
+                                <p>Indonesia 360 Tour juga menyediakan layanan pembelajaran secara digital tentang
+                                    kebudayaan
+                                    dan alam yang ada di Indonesia.
                                 </p>
                             </div>
                         </div>
@@ -394,24 +369,24 @@
                     Destination
                 </h3>
                 <h5 class="text-secondary">
-                    Berbagai macam destinasi terbaik yang dapat dikunjungi secara
-                    virtual360 di sini.
+                    Destinasi terbaik pilihan yang dapat dikunjungi secara
+                    virtual 360.
                 </h5>
             </div>
 
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 @foreach ($categori_provinsi as $item)
                     <div class="col-lg-2 col-sm-6 mb-6">
                         <a href="{{ route('category-provinsi-detail', $item->slug) }}">
                             <div
-                                class="card service-card shadow-hover rounded-3 text-center align-items-center w-100 h-100">
+                                class="card service-card shadow-hover rounded-2 text-center align-items-center w-100 h-100">
                                 <div class="card-body p-xxl-5 p-4">
                                     <img src="{{ Storage::url($item->photo) }}"
-                                         width="125"
-                                         height="125"
+                                         width="145"
+                                         height="145"
                                          alt="{{ $item->name }}"
                                     />
-                                    <h4 class="mb-3">{{ $item->name }}</h4>
+                                    <h4 class="mt-4 mb-2">{{ $item->name }}</h4>
                                 </div>
                             </div>
                         </a>
@@ -422,153 +397,45 @@
         <!-- end of .container-->
     </section>
 
-    {{-- <section class="pt-5" id="destination">
-        <div class="container">
-        <div
-            class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
-        >
-            <img src="assets/img/dest/shape.svg" alt="destination" />
-        </div>
-        <div class="mb-7 text-center">
-            <h5 class="text-secondary">Top Selling</h5>
-            <h3
-            class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
-            >
-            Top Destinations
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-            <div class="card overflow-hidden shadow">
-                <img
-                class="card-img-top"
-                src="images/sumut/1.jpg"
-                alt="Rome, Italty"
-                />
-                <div class="card-body py-4 px-3">
-                <div
-                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                >
-                    <h4 class="text-secondary fw-medium">
-                    <a
-                        class="link-900 text-decoration-none stretched-link"
-                        href="details.html"
-                        >Datau Toba, Sumatera Utara</a
-                    >
-                    </h4>
-                    <span class="fs-1 fw-medium">10,42k</span>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img
-                    src="assets/img/dest/navigation.svg"
-                    style="margin-right: 14px"
-                    width="20"
-                    alt="navigation"
-                    /><span class="fs-0 fw-medium">10 Days Trip</span>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4 mb-4">
-            <div class="card overflow-hidden shadow">
-                <img
-                class="card-img-top"
-                src="images/sulasel/3.jpg"
-                alt="London, UK"
-                />
-                <div class="card-body py-4 px-3">
-                <div
-                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                >
-                    <h4 class="text-secondary fw-medium">
-                    <a
-                        class="link-900 text-decoration-none stretched-link"
-                        href="details.html"
-                        >Pantai Tanjung, Sulawesi Selatan</a
-                    >
-                    </h4>
-                    <span class="fs-1 fw-medium">14.2k</span>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img
-                    src="assets/img/dest/navigation.svg"
-                    style="margin-right: 14px"
-                    width="20"
-                    alt="navigation"
-                    /><span class="fs-0 fw-medium">12 Days Trip</span>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4 mb-4">
-            <div class="card overflow-hidden shadow">
-                <img
-                class="card-img-top"
-                src="images/papua/1.jpg"
-                alt="Full Europe"
-                />
-                <div class="card-body py-4 px-3">
-                <div
-                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                >
-                    <h4 class="text-secondary fw-medium">
-                    <a
-                        class="link-900 text-decoration-none stretched-link"
-                        href="details.html"
-                        >Raja Ampat</a
-                    >
-                    </h4>
-                    <span class="fs-1 fw-medium">15.49k</span>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img
-                    src="assets/img/dest/navigation.svg"
-                    style="margin-right: 14px"
-                    width="20"
-                    alt="navigation"
-                    /><span class="fs-0 fw-medium">28 Days Trip</span>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-        <!-- end of .container-->
-    </section> --}}
-
     <section id="prototype">
         <div class="container" data-aos="fade-up">
             <div class="mb-7 text-center">
                 <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                     Prototype
                 </h3>
-                <h5 class="text-secondary">
+                {{--<h5 class="text-secondary">
                     Rasakan pengalaman jelajah Indonesia secara virtual melalui prototype di bawah ini.
                     <br>
                     Klik tombol <i class="fa fa-info text-kuning"></i> di bawah untuk tutorial penggunaan.
-                </h5>
+                </h5>--}}
             </div>
-            <div class=" d-flex justify-content-center">
-                <iframe width="100%"
+            <div class="d-flex justify-content-center">
+                {{--<iframe width="100%"
                         height="720"
                         src="https://www.artsteps.com/embed/62489e716b52fc7b54fa087e/1280/720" frameborder="0"
                         allowfullscreen>
-                </iframe>
+                </iframe>--}}
+                <img src="images/sand-clock.png"
+                     alt=""
+                     height="85"
+                     width="85"
+                     class="mb-7">
             </div>
+            <h4 class="text-secondary text-center">Soon, please wait...</h4>
         </div>
         <!-- end of .container-->
     </section>
 
-    <section id="testimonial" class="bg-soft-success">
+    {{--<section id="testimonial" class="bg-soft-success">
         <div class="position-relative pt-3 pt-lg-2 pb-1 pb-lg-2" data-aos="fade-up">
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="mb-8 text-start">
-                            <h5 class="text-secondary">Testimonials</h5>
+                            <h2 class="text-secondary">Testimonials</h2>
                             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                                Apa yang orang katakan tentang SVCC Indonesia.
+                                Apa yang orang katakan tentang Indonesia 360 Tour.
                             </h3>
                         </div>
                     </div>
@@ -737,14 +604,14 @@
             </div>
         </div>
         <!-- end of .container-->
-    </section>
+    </section>--}}
 
     <section id="partners">
         <div class="position-relative pt-3 pt-lg-2 pb-1 pb-lg-2" data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
                     <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                        Our Partners
+                        SVCC Indonesia Partners
                     </h3>
                     <h5 class="text-secondary">
                         Beberapa partner yang ikut bekerja sama dengan SVCC Indonesia.
@@ -849,8 +716,8 @@
                                         class="form-control form-little-squirrel-control"
                                         type="email"
                                         placeholder="Masukkan email kamu"
-                                        aria-label="email"
-                                    /><img
+                                        aria-label="email"/>
+                                    <img
                                         class="input-box-icon"
                                         src="assets/img/cta/mail.svg"
                                         width="17"
