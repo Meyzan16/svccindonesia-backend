@@ -13,7 +13,7 @@
 <hr>
 
 ## How to Deploy This Repository
-1. Install requirements: Xampp, Composer, Node.js, PHP version 8^ 
+1. Install requirements: Xampp, Composer, Node.js, PHP version ^7.4 
 2. Clone this repository to your local | <span style="color: #14859B">$git clone https://github.com/Meyzan16/svccindonesia-backend.git </span>
 3. Copy & paste <span style="color: #EB913F">.env.example</span> then rename to <span style="color: #EB913F">.env</span>
 4. Change DB environment such as name and password 
