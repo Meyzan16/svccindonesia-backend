@@ -110,6 +110,8 @@
                                 marketplace sehingga mempermudah wisatawan dalam membeli
                                 produk UMKM dengan cara pengunjung dapat mengakses link
                                 produk pada display platform. <a href="/about-us" class="text-biru">Selengkapnya</a>
+                                <br class="d-none d-sm-block"/>
+                                Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                             </p>
                         </div>
                     </div>
