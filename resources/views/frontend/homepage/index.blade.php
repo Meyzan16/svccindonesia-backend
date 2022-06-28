@@ -318,7 +318,7 @@ Indonesia 360 Tour | Home
     <div class="container" data-aos="fade-up">
         <div class="mb-7 text-center">
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                Let Us Now How We're Doing
+                Let Us Know How We're Doing
             </h3>
             <h5 class="text-secondary">
                 We are always trying to improve what we do and your feedback is invaluable
@@ -331,7 +331,7 @@ Indonesia 360 Tour | Home
                         allowfullscreen>
                 </iframe>--}}
             {{-- <img src="images/sand-clock.png" alt="" height="85" width="85" class="mb-7"> --}}
-            <a class="nav-link text-white btn btn-lg btn-merah border-5 primary-btn-shadow" href="">
+            <a class="nav-link text-white btn btn-lg btn-merah border-5 primary-btn-shadow" href="https://docs.google.com/forms/d/e/1FAIpQLSe9v7wxHUNCbtjL-ezdWYNSkVqg9uRkDwQAxSYbnc2aF0YTDQ/viewform?usp=sf_link">
                 Give Feedback
             </a>
 
