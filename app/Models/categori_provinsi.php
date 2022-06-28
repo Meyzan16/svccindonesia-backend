@@ -11,7 +11,7 @@ class categori_provinsi extends Model
     use HasFactory;
 
     public function products()
-    {                                            
-        return $this->hasMany(Products::class);
+    {
+        return $this->hasMany(\App\Models\products::class);
     }
 }

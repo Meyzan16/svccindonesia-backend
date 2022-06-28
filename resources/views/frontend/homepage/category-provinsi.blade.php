@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center text-uppercase mb-3" data-aos="fade-up">
-                        <h1>Tentang Destinasi {{ Request::segment(2) }}</h1>
+                        <h1>Tentang Wisata {{ Request::segment(2) }}</h1>
                     </div>
                     <div class="col-6 text-left">
                         <p>Jakarta, secara resmi bernama Daerah Khusus Ibukota Jakarta atau DKI Jakarta) adalah ibu kota
@@ -32,42 +32,12 @@
                         </p>
                     </div>
                     <div class="col-6 justify-content-center d-flex">
-                        <img src="/images/jakarta/jakarta-2.jpg"
+                        <img src="/assets/img/destination/jakarta/jakarta-2.jpg"
                              alt="images"
                              class="w-75 h-75 bg-secondary rounded-2">
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- prototype destinasi -->
-        <section id="prototype">
-            <div class="container" data-aos="fade-up">
-                <div class="mb-7 text-center">
-                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
-                        Prototype
-                    </h3>
-                    {{--<h5 class="text-secondary">
-                        Rasakan pengalaman jelajah Indonesia secara virtual melalui prototype di bawah ini.
-                        <br>
-                        Klik tombol <i class="fa fa-info text-kuning"></i> di bawah untuk tutorial penggunaan.
-                    </h5>--}}
-                </div>
-                <div class="d-flex justify-content-center">
-                    {{--<iframe width="100%"
-                            height="720"
-                            src="https://www.artsteps.com/embed/62489e716b52fc7b54fa087e/1280/720" frameborder="0"
-                            allowfullscreen>
-                    </iframe>--}}
-                    <img src="/images/sand-clock.png"
-                         alt=""
-                         height="85"
-                         width="85"
-                         class="mb-7">
-                </div>
-                <h4 class="text-secondary text-center">Soon, please wait...</h4>
-            </div>
-            <!-- end of .container-->
         </section>
 
         <!-- product -->
@@ -130,7 +100,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12" data-aos="fade-up">
-                        <h5>Pilihan Destinasi Lainnya</h5>
+                        <h5>Kategori Wisata Lainnya</h5>
                     </div>
                 </div>
 

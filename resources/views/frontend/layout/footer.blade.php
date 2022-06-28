@@ -4,20 +4,20 @@
             <div class="col-lg-3 col-md-3 mb-4 mb-lg-0 order-lg-0 order-md-0 order-0 d-flex justify-content-center">
                 <img
                     class="mb-4"
-                    src="/images/logotranspr.png"
+                    src="/assets/img/logo/logotranspr.png"
                     width="200"
                     height="200"
                     alt="id360Tour Logo"
                 />
             </div>
             <div class="col-lg-3 col-md-2 mb-4 mb-lg-0 order-lg-1 order-md-2">
-                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Id 360 Tour</h4>
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2">
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="/about-us">
-                            About Us
+                            Tentang
                         </a>
                     </li>
                     <li class="mb-2">
@@ -31,13 +31,13 @@
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="#">
-                            FAQ
+                            Blog
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-3 col-lg-3 mb-4 mb-lg-0 order-lg-2 order-md-3">
-                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Kontak</h4>
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2">
                         <a
@@ -50,39 +50,40 @@
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="#">
-                            Phone: (022)2014508
+                            Telepon: (022)2014508
                         </a>
                     </li>
                     <li class="mb-2">
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="#!">
-                            Location: Jl. Gegerkalong Hilir, Sukarasa, Kec. Sukasari, Kota Bandung, Jawa Barat 40152
+                            Lokasi: Jl. Gegerkalong Hilir, Sukarasa, Kec. Sukasari, Kota Bandung, Jawa Barat 40152
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-3 col-lg-2 mb-4 mb-lg-0 order-lg-3 order-md-4">
-                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Ekstra</h4>
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2">
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="#!">
-                            Lorem ipsum
-                        </a>
-                    </li>
-                    <li class="mb-2">
-                        <a
-                            class="link-900 fs-1 fw-medium text-decoration-none"
-                            href="#!">Lorem ipsum
+                            Soon.
                         </a>
                     </li>
                     <li class="mb-2">
                         <a
                             class="link-900 fs-1 fw-medium text-decoration-none"
                             href="#!">
-                            Lorem ipsum
+                            Soon.
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a
+                            class="link-900 fs-1 fw-medium text-decoration-none"
+                            href="#!">
+                            Soon.
                         </a>
                     </li>
                 </ul>

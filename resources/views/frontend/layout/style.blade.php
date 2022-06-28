@@ -1,4 +1,4 @@
-<link rel="icon" href="/images/logo.jpeg" class="rounded-circle"/>
+<link rel="icon" href="assets/img/logo/logo.jpeg" type="image/x-icon"/>
 <meta
   name="msapplication-TileImage"
   content="/assets/img/favicons/mstile-150x150.png"

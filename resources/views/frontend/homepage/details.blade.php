@@ -86,47 +86,6 @@
 
         </div>
 
-        <{{--section id="customer-review">
-            <div class="store-review">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-8 mb-3">
-                            <h5>Customer Review (3)</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <ul class="list-unstyled">
-                                <li class="media">
-                                    <img src="/images/review-product/1.png" class="mr-3 rounded-circle" alt="">
-                                    <div class="media-body">
-                                        <h5 class="mt-2 mb-1">Hazza Risky</h5>
-                                        Keren! Keren! Keren!
-                                    </div>
-                                </li>
-
-                                <li class="media">
-                                    <img src="/images/review-product/2.png" class="mr-3 rounded-circle" alt="">
-                                    <div class="media-body">
-                                        <h5 class="mt-2 mb-1">Hazza Risky</h5>
-                                        Keren! Keren! Keren!
-                                    </div>
-                                </li>
-
-                                <li class="media">
-                                    <img src="/images/review-product/3.png" class="mr-3 rounded-circle" alt="">
-                                    <div class="media-body">
-                                        <h5 class="mt-2 mb-1">Hazza Risky</h5>
-                                        Keren! Keren! Keren!
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>--}}
-
     </div>
 @endsection
 

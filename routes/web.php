@@ -24,10 +24,10 @@ use App\Http\Controllers\Admin\DashboardAdminController;
 Route::group(['prefix' => '/'], function () {
     Route::get('/', [HomeController::Class, 'index'])->name('homepage');
     Route::get('/about-us', [HomeController::Class, 'aboutUs'])->name('about-us-page');
-    //testroute
-    Route::get('/login', function () {
-        return view('frontend.homepage.about-us');
-    });
+//    testroutelogin
+//    Route::get('/login', function () {
+//        return view('frontend.homepage.about-us');
+//    });
 });
 
 Route::group(['prefix' => 'brand/'], function () {
