@@ -153,50 +153,7 @@
     <section id="services" data-aos="zoom-in">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-flex justify-content-center align-items-start">
-                    <div class="card position-relative shadow"
-                         style="max-width: 370px">
-                        <div class="position-absolute z-index--1 me-10 me-xxl-0"
-                             style="right: -160px; top: -210px">
-                            <img
-                                src="assets/img/steps/bg.png"
-                                style="max-width: 550px"
-                                alt="shape"
-                            />
-                        </div>
-                        <div class="card-body p-3">
-                            <img class="mb-4 mt-2 rounded-2 w-100"
-                                 src="assets/img/destination/jakarta/bundaran-hi.jpg"
-                                 alt="booking"
-                            />
-                            <div>
-                                <h5 class="fw-medium">Bundaran HI, Jakarta</h5>
-                                <p class="fs--1 mb-3 fw-medium">foto oleh <span
-                                        class="text-ungu">free4kwallpapers</span></p>
-                                <div class="icon-group mb-4">
-                                    <a class="btn icon-item" href="#">
-                                        <img src="assets/img/steps/leaf.svg"
-                                             alt="blog"/>
-                                    </a>
-                                    <a class="btn icon-item" href="#">
-                                        <img src="assets/img/steps/map.svg"
-                                             alt="map"/>
-                                    </a>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center mt-n1">
-                                        <img class="me-3"
-                                             src="assets/img/steps/building.svg"
-                                             width="18"
-                                             alt="building"
-                                        /><span class="fs--1 fw-medium">87 orang pernah kesini</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-0 order-md-1">
                     <div class="mb-4 text-start">
                         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
                             Apa yang bisa dilakukan di <span class="text-kuning">Id 360 Tour</span>?
@@ -261,6 +218,49 @@
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="col-lg-6 colorder-0 text-md-start d-flex justify-content-center align-items-start">
+                    <div class="card position-relative shadow"
+                         style="max-width: 370px">
+                        <div class="position-absolute z-index--1 me-10 me-xxl-0"
+                             style="right: -160px; top: -210px">
+                            <img
+                                src="assets/img/steps/bg.png"
+                                style="max-width: 550px"
+                                alt="shape"
+                            />
+                        </div>
+                        <div class="card-body p-3">
+                            <img class="mb-4 mt-2 rounded-2 w-100"
+                                 src="assets/img/destination/jakarta/bundaran-hi.jpg"
+                                 alt="booking"
+                            />
+                            <div>
+                                <h5 class="fw-medium">Bundaran HI, Jakarta</h5>
+                                <p class="fs--1 mb-3 fw-medium">foto oleh <span
+                                        class="text-ungu">free4kwallpapers</span></p>
+                                <div class="icon-group mb-4">
+                                    <a class="btn icon-item" href="#">
+                                        <img src="assets/img/steps/leaf.svg"
+                                             alt="blog"/>
+                                    </a>
+                                    <a class="btn icon-item" href="#">
+                                        <img src="assets/img/steps/map.svg"
+                                             alt="map"/>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center mt-n1">
+                                        <img class="me-3"
+                                             src="assets/img/steps/building.svg"
+                                             width="18"
+                                             alt="building"
+                                        /><span class="fs--1 fw-medium">87 orang pernah kesini</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
